@@ -1,21 +1,22 @@
 {
   "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
   "@type": "SoftwareSourceCode",
-  "name": "natura2000-kras-site-evidence",
-  "description": "Question-rooted study: can open EU-wide data tell whether habitat 62A0 (Eastern sub-Mediterranean dry grasslands) is declining inside Natura 2000 site SI3000276 Kras? Article 17, CORINE, CLC+ and GBIF on WGS84 HEALPix (GRID4EARTH DGGS-Zarr).",
+  "name": "Natura 2000 site evidence for Kras (SI3000276)",
+  "description": "DRAFT. Monitoring workflow for Natura 2000 sites in Slovenia, piloted on SI3000276 Kras: grassland, overgrown agricultural land, trees and shrubs and forest from the national Land Use database (MKGP RABA; results local only pending MKGP permission), validated against Davidović et al. 2026, compared with open EU-wide layers (Article 17, CORINE, CLC+ Backbone, HRL Grassland) and GBIF records on WGS84 HEALPix (GRID4EARTH DGGS-Zarr).",
   "version": "0.1.0",
   "dateCreated": "2026-10-22",
   "dateModified": "2026-10-22",
   "license": "https://spdx.org/licenses/MIT",
   "codeRepository": "https://github.com/annefou/natura2000-kras-site-evidence",
-  "identifier": "{{ZENODO_DOI}}",
-  "@id": "{{ZENODO_DOI}}",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "Python",
     "version": "3.12"
   },
-  "operatingSystem": ["Linux", "macOS"],
+  "operatingSystem": [
+    "Linux",
+    "macOS"
+  ],
   "author": [
     {
       "@type": "Person",
@@ -29,21 +30,50 @@
     }
   ],
   "keywords": [
+    "Natura 2000",
+    "grassland",
+    "land use",
+    "Slovenia",
+    "Kras",
+    "HEALPix",
+    "GRID4EARTH",
+    "LifeWatch",
     "replication",
-    "reproducibility",
     "FORRT",
-    "nanopublication",
-    "Science-Live"
+    "nanopublication"
   ],
   "referencePublication": {
     "@type": "ScholarlyArticle",
-    "name": "{{PAPER_TITLE}}",
-    "datePublished": "{{PAPER_YEAR}}",
-    "@id": "https://doi.org/{{PAPER_DOI}}"
+    "name": "Land-use dynamics and grassland succession challenges in the Natura 2000 site Kras: The socioeconomic perspective",
+    "datePublished": "2026",
+    "@id": "https://doi.org/10.3986/AGS.14021"
   },
   "isPartOf": {
     "@type": "Organization",
     "name": "Science Live",
     "url": "https://platform.sciencelive4all.org"
-  }
+  },
+  "funding": [
+    {
+      "@type": "Grant",
+      "name": "GRID4EARTH2",
+      "identifier": "TODO: grant number not found locally"
+    }
+  ],
+  "funder": [
+    {
+      "@type": "Organization",
+      "name": "LifeWatch ERIC"
+    }
+  ],
+  "softwareRequirements": [
+    "healpix-connector 0.1.0 (https://doi.org/10.5281/zenodo.22904851)",
+    "healpix-geo >=0.4.1",
+    "geopandas",
+    "pyogrio",
+    "xarray",
+    "zarr >=3",
+    "snakemake"
+  ],
+  "developmentStatus": "wip"
 }

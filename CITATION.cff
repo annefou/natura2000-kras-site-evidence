@@ -1,5 +1,15 @@
 cff-version: 1.2.0
-title: "natura2000-kras-site-evidence"
+title: "Natura 2000 site evidence for Kras (SI3000276): grassland, overgrowth and forest from the Slovenian Land Use database, open EU-wide layers and GBIF on WGS84 HEALPix"
+abstract: >-
+  DRAFT. A monitoring workflow for Natura 2000 sites in Slovenia, piloted on SI3000276 Kras:
+  per site, the current extent of permanent grassland, overgrown agricultural land, trees and
+  shrubs and forest from the national Land Use database (MKGP RABA), change since the previous
+  snapshot and since 2002, and how current the data are. Validated against Davidović, Čuš and
+  Ivajnšič (2026). Open EU-wide layers (Article 17, CORINE Land Cover and change, CLC+ Backbone,
+  HRL Grassland) and GBIF species records on HEALPix (GRID4EARTH DGGS-Zarr) are compared for the
+  same site. Results from the national database are produced locally and not published pending
+  permission from MKGP. Not yet reviewed by an ecologist or by the Slovenian Distributed Centre
+  of LifeWatch (ZRC SAZU).
 message: "If you use this software, please cite it as below."
 type: software
 authors:
@@ -7,41 +17,68 @@ authors:
     given-names: "Anne"
     orcid: "https://orcid.org/0000-0002-1784-2920"
     affiliation: "LifeWatch ERIC"
+# TODO after transfer to the GRID4EARTH organisation and then LifeWatch ERIC: update this URL.
 repository-code: "https://github.com/annefou/natura2000-kras-site-evidence"
 license: MIT
 version: "0.1.0"
 date-released: "2026-10-22"
 # Identifiers below are recorded AUTOMATICALLY on each release by
 # .github/workflows/release-identifiers.yml — don't fill them in by hand.
-#
-# `doi:` is the CONCEPT DOI: it means "cite this project" and deliberately
-# resolves to whatever version is latest. That floating behaviour is correct
-# HERE and wrong in a nanopub — see scripts/set_release_identifiers.py.
-#
-# (This used to say "run /init-template again or edit by hand". /init-template
-# deletes itself as its final step, so by the time a DOI existed the skill it
-# named was gone and "edit by hand" was the only path left. Two repos built from
-# this template then recorded the version DOI two different ways — one a
-# structured identifier, one a prose comment. Hence the automation.)
-doi: "{{ZENODO_DOI}}"
-identifiers:
-  - type: doi
-    value: "{{ZENODO_DOI}}"
-    description: "Concept DOI (resolves to the latest version) — cite the project"
-  # On release, the workflow adds:
-  #   - type: doi   value: <version DOI>  "Version DOI for vX.Y.Z — pins this exact release; cite this from nanopubs"
-  #   - type: swh   value: swh:1:rev:<commit>;origin=<repo>  "Software Heritage ID of the vX.Y.Z source tree"
+# No release has been made: none is planned before review.
 keywords:
+  - Natura 2000
+  - Habitats Directive
+  - grassland
+  - land use
+  - ecological succession
+  - Slovenia
+  - Kras
+  - LifeWatch
+  - HEALPix
+  - GRID4EARTH
   - replication
-  - reproducibility
   - FORRT
   - nanopublication
   - Science-Live
 references:
   - type: article
-    title: "{{PAPER_TITLE}}"
+    title: "Land-use dynamics and grassland succession challenges in the Natura 2000 site Kras: The socioeconomic perspective"
     authors:
-      - family-names: "{{PAPER_AUTHOR_FAMILY}}"
-        given-names: "{{PAPER_AUTHOR_GIVEN}}"
-    year: "{{PAPER_YEAR}}"
-    doi: "{{PAPER_DOI}}"
+      - family-names: "Davidović"
+        given-names: "Danijel"
+      - family-names: "Čuš"
+        given-names: "Jure"
+      - family-names: "Ivajnšič"
+        given-names: "Danijel"
+    year: "2026"
+    journal: "Acta geographica Slovenica"
+    volume: 66
+    issue: "1"
+    start: 61
+    end: 80
+    doi: "10.3986/AGS.14021"
+  - type: dataset
+    title: "GBIF Occurrence Download"
+    authors:
+      - name: "GBIF.org"
+    year: "2026"
+    doi: "10.15468/dl.5epzsz"
+  - type: software
+    title: "healpix-connector"
+    authors:
+      - family-names: "Fouilloux"
+        given-names: "Anne"
+    version: "0.1.0"
+    doi: "10.5281/zenodo.22904851"
+  - type: software
+    title: "BMD Single Access Point prototype (data builders reused in pipeline/builders/)"
+    authors:
+      - family-names: "Fouilloux"
+        given-names: "Anne"
+    url: "https://github.com/annefou/bmd-sap-prototype"
+    notes: "FAIR2Adapt-funded (European Commission grant 101188256)."
+  - type: database
+    title: "Evidenca dejanske rabe kmetijskih in gozdnih zemljišč (Land Use database, RABA), archive"
+    authors:
+      - name: "Ministry of Agriculture, Forestry and Food of the Republic of Slovenia (MKGP)"
+    url: "https://rkg.gov.si/arhiv/RABA/"
