@@ -49,8 +49,22 @@ snakemake = "*"
 # geopandas = "*"            # vector I/O
 # dask = "*"                 # out-of-core / parallel
 
+# --- this study ---
+httpx = ">=0.27"             # EEA / Reportnet / CLMS / GBIF queries in pipeline/builders/
+requests = ">=2.31"          # used by healpix-connector's GBIF connector
+shapely = ">=2.0"            # clip CORINE polygons and GBIF records to the site boundary
+healpix-geo = ">=0.4.1"      # HEALPix on the WGS84 ellipsoid (GRID4EARTH), NESTED; 0.4.1 is what ran
+zarr = ">=3"                 # GRID4EARTH DGGS-Zarr v3 store of the species cells
+geopandas = ">=1.0"          # RABA (MKGP land use) vectors: read, reproject, clip
+pyogrio = "*"                # fast shapefile reading straight from the downloaded zip
+pyproj = "*"                 # D48/GK (EPSG:3912, RABA <= 2018) -> D96/TM (EPSG:3794)
+libarchive = "*"             # bsdtar: unpacks the RAR snapshots of RABA (2011-2022)
+
 # Pip-only deps go in [pypi-dependencies]. Conda-forge is preferred where available.
-# [pypi-dependencies]
+[pypi-dependencies]
+# healpix-connector v0.1.0, pinned to the release whose version DOI the species crate cites
+# (10.5281/zenodo.22904851). Git tag, not a local path, so a fresh clone works anywhere.
+healpix-connector = { git = "https://github.com/annefou/healpix-connector.git", tag = "v0.1.0" }
 # pygbif = "*"               # GBIF occurrences
 # polytope-client = "*"      # Destination Earth Climate DT
 # earthkit-data = "*"
@@ -76,6 +90,12 @@ tests = { features = ["tests"], solve-group = "default" }
 
 [tasks]
 run = "snakemake --cores 1"
+# Rebuild every EU and species input from its source (network, ~3 min), then the analysis.
+rebuild = "snakemake --cores 1 --config rebuild=1 --forcerun site_crate hrl_grassland"
+# National Land Use database (MKGP RABA): LOCAL results only (results/local/, gitignored).
+raba = "snakemake --cores 1 --config raba=1"
+# Regenerate the GBIF download request for a person to submit on gbif.org.
+gbif-request = "python pipeline/builders/gbif_request.py --site SI3000276"
 book = "myst build --html"
 lab = "jupyter lab"
 

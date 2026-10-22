@@ -64,3 +64,9 @@ docker-image.tar.gz
 
 # Local scratch — a Claude Code session-resume helper, never part of a study.
 claude-resume.txt
+
+# RABA (Slovenian Land Use database, MKGP): downloads and EVERY derived result stay local.
+# Not committed or published until MKGP gives written permission (see README.md § Data licensing).
+data/raba/
+results/local/
+results/raba/

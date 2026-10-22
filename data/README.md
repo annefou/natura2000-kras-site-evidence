@@ -1,5 +1,18 @@
 # `data/` — downloaded artefacts, never committed
 
+For this study:
+
+- `data/crates/` — the EU input crates built by `pipeline/builders/` (site, Article 17, CORINE, CLC+,
+  species). The species crate holds the raw GBIF records of doi:10.15468/dl.5epzsz (CC BY-NC 4.0):
+  never committed. Small redistributable tables are copied to `results/eu/` by `pipeline/collect_eu.py`.
+- `data/cache/` — the GBIF download zip.
+- `data/raba/` — Land Use database (MKGP) archives while one is being aggregated; deleted afterwards.
+  Nothing derived from them leaves `results/local/` (gitignored).
+
+No credentials are needed: every source is a public download or web service.
+
+---
+
 This directory holds the raw and cleaned datasets used by the replication pipeline. **Files in this directory are never committed to git** (`.gitignore` excludes everything except this README).
 
 ## Why download-on-first-run
