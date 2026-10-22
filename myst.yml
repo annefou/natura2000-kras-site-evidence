@@ -10,7 +10,7 @@ project:
   license: MIT
   toc:
     - file: index.md
-    - file: service/index.md
+    - file: service/service.md
     - file: service/latest.md
     - file: notebooks/01_data_download.ipynb
     - file: notebooks/02_data_clean.ipynb

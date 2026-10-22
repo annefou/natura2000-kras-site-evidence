@@ -14,7 +14,7 @@ sub-Mediterranean dry grasslands (10,110 ha in the Standard Data Form).
 
 | Layer | Data | On this site |
 |---|---|---|
-| [Service](service/index.md) (core) | Slovenian Land Use database (MKGP "RABA"), monthly snapshots | what is monitored and how to run it; **no results** pending MKGP permission |
+| [Service](service/service.md) (core) | Slovenian Land Use database (MKGP "RABA"), monthly snapshots | what is monitored and how to run it; **no results** pending MKGP permission |
 | [Validation](validation.md) | Davidović, Čuš & Ivajnšič 2026, [doi:10.3986/AGS.14021](https://doi.org/10.3986/AGS.14021) | the claims under test and the boundary question |
 | [EU comparison](notebooks/03_analysis.ipynb) | Article 17, CORINE, CLC+ Backbone, HRL Grassland | results |
 | [Species](notebooks/02_data_clean.ipynb) (supporting) | GBIF [doi:10.15468/dl.5epzsz](https://doi.org/10.15468/dl.5epzsz) on HEALPix (GRID4EARTH DGGS-Zarr) | results |
