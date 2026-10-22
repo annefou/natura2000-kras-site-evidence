@@ -1,0 +1,28 @@
+raba_id,paper_class,source
+1100,Arable land,Table 1
+1180,Arable land,Table 1
+1190,Arable land,Table 1
+1160,Other perennial crops,assumption (hop field; not in Table 1)
+1211,Vineyards,Table 1
+1212,Other perennial crops,assumption (nursery; not in Table 1)
+1221,Orchards,Table 1
+1222,Orchards,Table 1
+1230,Olive groves,Table 1
+1240,Other perennial crops,Table 1
+1300,Grasslands,Table 1
+1310,Grasslands,assumption (2002 intensive meadows; not in Table 1)
+1321,Grasslands,Table 1
+1322,Grasslands,assumption (2002 extensive meadows; not in Table 1)
+1410,Overgrown areas,Table 1
+1420,Overgrown areas,Table 1
+1500,Overgrown areas,Table 1
+1600,Overgrown areas,Table 1
+1800,Overgrown areas,Table 1
+2000,Forest,Table 1
+3000,Built-up areas,Table 1
+4100,Other,assumption (swamp; not in Table 1)
+4210,Other,assumption (reed; not in Table 1)
+4220,Other,Table 1
+5000,Other,Table 1
+6000,Other,Table 1
+7000,Other,Table 1

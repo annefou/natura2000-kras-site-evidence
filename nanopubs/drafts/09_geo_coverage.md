@@ -1,5 +1,7 @@
 # 09 — Geographical coverage (optional)
 
+> **DRAFT — not published.** WKT left blank on purpose: the paper states no coordinates and its polygon is not public; the form's geocoder or the authors' polygon must supply it. For reference only, this repository's own area (SAC SI3000276, EEA, CC BY 4.0) is in `results/eu/site-SI3000276/boundary-simplified.wkt`, which is NOT the paper's area.
+
 > Run the pre-flight checklist in `docs/forrt-form-fields.md` § Pre-flight checklist before drafting. Read `docs/geo-coverage.md` first.
 >
 > **When to draft this.** Only when the paper's findings have a **specific geographic
@@ -39,7 +41,7 @@ If unsure, prefer separate nanopubs — atomic coverage is easier to search and 
 The **original paper's** DOI (bare, starting `10.` — the form prepends `https://doi.org/`). Same DOI as the Quote (step 01) / CiTO (step 06). Read it from `CITATION.cff` `references:`; do not recall it.
 
 ```
-{{PAPER_DOI}}
+10.3986/AGS.14021
 ```
 
 ---
@@ -63,7 +65,7 @@ whole
 **Quoted Text** (textarea, required) — the **verbatim** sentence from the paper naming *this* area. Character-for-character from the PDF; never paraphrase. Each location needs its own quote.
 
 ```
-
+Approximately 93% of the plateau (401 km²) lies within the Natura 2000 network, spanning eight municipalities.
 ```
 
 <!-- field: quotation-end -->
@@ -77,14 +79,14 @@ whole
 **Short ID for location** (text input, required) — slug for the URI suffix (lowercase, hyphenated), unique per location. E.g. `sado-estuary`, `westerschelde`, `amazon-basin`.
 
 ```
-
+kras-plateau-natura2000
 ```
 
 <!-- field: location-label -->
 **Area name** (text input, required) — human-readable name as the paper frames it. E.g. `Sado Estuary, Portugal`. Typing this into the form's **location search** geocodes it and fills the geometry.
 
 ```
-
+Natura 2000 part of the Kras Plateau, Slovenia
 ```
 
 <!-- field: geometry -->
@@ -105,7 +107,7 @@ coverage
 **Comment** (textarea, required) — one or two sentences on **how the quoted text supports** this being the coverage. Grounded in the paper, no new claims.
 
 ```
-
+The paper's study area: the part of the Kras Plateau (429 km²) inside the Natura 2000 network, delineated with a ZRSVN vector that is not published. Its land-use classes sum to about 40,120 ha. It is neither SAC SI3000276 Kras (48,042 ha) nor SPA SI5000023 Kras (58,753 ha). Quote verified with verify_quote (page 4).
 ```
 
 ### Location B *(duplicate the block above for each further distinct site; delete if only one location)*

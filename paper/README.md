@@ -1,11 +1,9 @@
-# `paper/` — drop the source paper PDF here
+# `paper/`
 
-Place the PDF of the paper you are replicating in this directory. The paper-analyst agent (`/agent paper-analyst`) reads it from here.
+`Davidovic_Cus_Ivajnsic_2026_AGS14021.pdf` — Davidović, D., Čuš, J., Ivajnšič, D. 2026: Land-use dynamics
+and grassland succession challenges in the Natura 2000 site Kras: The socioeconomic perspective.
+*Acta geographica Slovenica* 66(1), 61–80. <https://doi.org/10.3986/AGS.14021>.
+Licence: **CC BY-SA 4.0** (stated on the article), redistributed here unchanged under that licence.
 
-Naming convention: `{first-author}-{year}.pdf` (e.g. `soroye-2020.pdf`). One PDF per replication; if you are replicating multiple papers, add additional files and reference all of them in `index.md`.
-
-If the paper is open access via DOI, you can also use `WebFetch` against the publisher's landing page — but a local PDF is more reliable and works offline.
-
-## Why this matters
-
-The Quote-with-comment nanopublication step requires **verbatim** text from the paper. Drafting from memory or paraphrase is forbidden — see `docs/verify-before-drafting.md`. A local PDF is the source of truth.
+It is the paper replicated in the validation section. Quotations in `nanopubs/drafts/` were checked
+against this PDF with `verify_quote` (SHA-256 `52b091cb8b84d34fafc54560252d59325a17e80ff8363c37586ed8a02f93bbf6`).

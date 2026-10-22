@@ -9,6 +9,8 @@
 > rm nanopubs/drafts/01_pico.md nanopubs/drafts/01_pcc.md
 > ```
 
+> **DRAFT — not published.** Prepared for review; not reviewed by an ecologist or by the Slovenian Distributed Centre of LifeWatch (ZRC SAZU). Do not publish before review.
+
 **Form heading:** *"Annotate a paper quotation — Annotating a paper quotation with personal interpretation"*
 
 ## Field-by-field draft
@@ -19,7 +21,7 @@
 Format: starts with `10.` — bare DOI, **NOT** `https://doi.org/...` form.
 
 ```
-{{PAPER_DOI}}
+10.3986/AGS.14021
 ```
 
 ### Quote mode (radio button)
@@ -35,10 +37,10 @@ Verbatim from the paper PDF in `paper/`. Character-for-character. ≤ 500 chars 
 > _Read the PDF first. Don't paraphrase from memory. See `docs/verify-before-drafting.md`._
 
 ```
-
+Grasslands declined by 2,815 ha (27%) to 7,667 ha (19%), contracting by 128 ha/yr, especially near settlements and in the north. Overgrown areas rose by 1,646 ha (47%), reaching 5,125 ha (13%), with an average gain of 75 ha/yr, dispersed across the region.
 ```
 
-Character count: ___ / 500.
+Character count: 256 / 500. Verified against `paper/Davidovic_Cus_Ivajnsic_2026_AGS14021.pdf` with `verify_quote` (page 7; match after whitespace / line-break-hyphen repair: the PDF splits "espe-cially" across a line).
 
 <!-- field: quotation-end -->
 ### End of quotation (optional - use when quoting beginning and end of a longer passage, max. 500 characters) (textarea, optional)
@@ -57,7 +59,7 @@ phrase here. Leave empty for a single short quote.
 Why this quote matters and what the replication tests. Connect the paper's claim to the work this repo does. Don't repeat the quote.
 
 ```
-
+This is the grassland and overgrowth change in the Natura 2000 site Kras from the national Land Use database (MKGP), 2002-2024. We re-derive it from the same database's public archive snapshots with open code, compare shares and relative change (the authors' study-area polygon is not published), and ask whether open EU-wide layers (CORINE, HRL Grassland, CLC+ Backbone) detect a change of this size. They do not: CORINE change layers show 7.4 ha lost from grassland classes 2000-2018 inside SAC SI3000276.
 ```
 
 ## Publication note

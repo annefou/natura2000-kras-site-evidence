@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "kind": "forrt-chain-draft",
+  "chain_shape": "paper-rooted",
+  "source": {
+    "repository": "https://github.com/annefou/natura2000-kras-site-evidence",
+    "commit": "cf8004a49e26f7dda9beb7bc11a295dc4fca6b9c",
+    "figure": "figures/main_result.png"
+  },
+  "steps": [
+    {
+      "step": "01_quote",
+      "template_key": "ANNOTATE_QUOTATION",
+      "template_uri": "https://w3id.org/np/RA24onqmqTMsraJ7ypYFOuckmNWpo4Zv5gsLqhXt7xYPU",
+      "prefill": {
+        "paper": "10.3986/AGS.14021",
+        "quotation": "Grasslands declined by 2,815 ha (27%) to 7,667 ha (19%), contracting by 128 ha/yr, especially near settlements and in the north. Overgrown areas rose by 1,646 ha (47%), reaching 5,125 ha (13%), with an average gain of 75 ha/yr, dispersed across the region.",
+        "comment": "This is the grassland and overgrowth change in the Natura 2000 site Kras from the national Land Use database (MKGP), 2002-2024. We re-derive it from the same database's public archive snapshots with open code, compare shares and relative change (the authors' study-area polygon is not published), and ask whether open EU-wide layers (CORINE, HRL Grassland, CLC+ Backbone) detect a change of this size. They do not: CORINE change layers show 7.4 ha lost from grassland classes 2000-2018 inside SAC SI3000276."
+      },
+      "provenance": {
+        "paper": "CITATION.cff",
+        "quotation": "nanopubs/drafts/01_quote.md",
+        "comment": "nanopubs/drafts/01_quote.md"
+      },
+      "published_uri": null
+    },
+    {
+      "step": "02_aida",
+      "template_key": "AIDA_SENTENCE",
+      "template_uri": "https://w3id.org/np/RALmXhDw3rHcMveTgbv8VtWxijUHwnSqhCmtJFIPKWVaA",
+      "prefill": {
+        "aida": "Between 2002 and 2024, the area of grassland in the Natura 2000 site Kras in Slovenia declined by about a quarter.",
+        "topic": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q1006733",
+            "label": "grassland"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q1165944",
+            "label": "land use"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q15069452",
+            "label": "Natura 2000 site"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q188230",
+            "label": "ecological succession"
+          }
+        ],
+        "st3": [
+          {
+            "dataset": "https://rkg.gov.si/arhiv/RABA/?C=N"
+          }
+        ],
+        "st4": [
+          {
+            "publication": "https://doi.org/10.3986/AGS.14021"
+          }
+        ]
+      },
+      "provenance": {
+        "aida": "nanopubs/drafts/02_aida.md",
+        "topic": "nanopubs/drafts/02_aida.md + Wikidata",
+        "st3": "nanopubs/drafts/02_aida.md",
+        "st4": "nanopubs/drafts/02_aida.md"
+      },
+      "published_uri": null
+    },
+    {
+      "step": "03_claim",
+      "template_key": "FORRT_CLAIM",
+      "template_uri": "https://w3id.org/np/RAZWyM8D16ya3S1zhCvrG1f0iSpd9-8onVWp0FTvvX7LQ",
+      "prefill": {
+        "claim": "kras-natura2000-grassland-decline-2002-2024",
+        "label": "Grassland decline in Natura 2000 site Kras, 2002-2024, national Land Use database",
+        "forrtType": "https://w3id.org/sciencelive/o/terms/descriptive_pattern-FORRT-Claim",
+        "source": "https://doi.org/10.3986/AGS.14021"
+      },
+      "provenance": {
+        "claim": "nanopubs/drafts/03_claim.md",
+        "label": "nanopubs/drafts/03_claim.md",
+        "forrtType": "nanopubs/drafts/03_claim.md",
+        "source": "CITATION.cff"
+      },
+      "manual": [
+        "forrtType"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "04_study",
+      "template_key": "FORRT_REPLICATION",
+      "template_uri": "https://w3id.org/np/RAuLEjPp-4dTvPwMkfHggTto1CgjIftiGRAgHlyeEonjQ",
+      "prefill": {
+        "study": "kras-grassland-decline-replication-open-code",
+        "label": "Replication with open code and public archive snapshots: grassland and overgrowth change in Natura 2000 site Kras, 2002-2024",
+        "type": "https://w3id.org/sciencelive/o/terms/Replication-Study",
+        "scope": "The direction and relative size of change 2002-2024 in three land-use classes of the paper's Table 2 (grasslands, overgrown areas, forest) in the Natura 2000 site Kras, and their shares of the site in 2002, 2012 and 2024. Out of scope: the socioeconomic models (GLMs), the TerrSet change-process and spatial-trend analyses, and absolute hectares, which depend on a study-area polygon that is not published.",
+        "methodology": "Public snapshots of the Slovenian Land Use database (MKGP RABA) from https://rkg.gov.si/arhiv/RABA/ (2002: RABA_2002_SHP.ZIP; 2012: RABA_2012_12_04.RAR; 2024: RABA_2024_06_30.zip) are read with open Python code (pipeline/raba.py), reprojected from D48/GK (EPSG:3912, up to 2018) to D96/TM (EPSG:3794), clipped to the Natura 2000 boundary from the EEA end-2024 release, and reclassified into the paper's classes following its Table 1 (config/validation/reclass.csv). Areas are exact vector areas. Shares and relative change 2002-2024 are compared with the paper's Table 2. The same code reports the latest month-end snapshot as a monitoring service.",
+        "deviation": "1) Study area: SAC SI3000276 Kras from the EEA (48,042 ha) instead of the authors' ZRSVN polygon of the Natura 2000 part of the Kras plateau (~40,120 ha, unpublished); the SAC's northern part (22,280 ha) is also reported. 2) Exact vector areas instead of 5 m rasterisation. 3) The paper does not say which version of each year it used; we use the versions named above. 4) The 2002 meadow codes 1310 and 1322, absent from the paper's Table 1, are mapped to grasslands. 5) Python instead of QGIS / TerrSet / Excel.",
+        "keywordSelection": [
+          {
+            "uri": "http://www.wikidata.org/entity/Q1006733",
+            "label": "grassland"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q1165944",
+            "label": "land use"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q15069452",
+            "label": "Natura 2000 site"
+          },
+          {
+            "uri": "http://www.wikidata.org/entity/Q188230",
+            "label": "ecological succession"
+          }
+        ],
+        "disciplineSelection": {
+          "uri": "http://www.wikidata.org/entity/Q738011",
+          "label": "landscape ecology"
+        }
+      },
+      "provenance": {
+        "study": "nanopubs/drafts/04_study.md",
+        "label": "nanopubs/drafts/04_study.md",
+        "type": "nanopubs/drafts/04_study.md",
+        "scope": "nanopubs/drafts/04_study.md",
+        "methodology": "nanopubs/drafts/04_study.md",
+        "deviation": "nanopubs/drafts/04_study.md",
+        "keywordSelection": "nanopubs/drafts/04_study.md + Wikidata",
+        "disciplineSelection": "nanopubs/drafts/04_study.md + Wikidata"
+      },
+      "manual": [
+        "type"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "05_outcome",
+      "template_key": "FORRT_REPLICATION_OUTCOME",
+      "template_uri": "https://w3id.org/np/RA2zljn0Nw9SadppOyxZoh-_Rxosslrq-vYG-p9SttnJE",
+      "prefill": {
+        "outcome": "kras-grassland-decline-replication-outcome",
+        "label": "Grassland decline in Natura 2000 site Kras 2002-2024: replication with public Land Use database snapshots (pending)",
+        "date": "2026-10-22",
+        "conclusion": "«PENDING: the replication numbers come from the national Land Use database (MKGP RABA). They are computed locally (results/local/validation.csv) and are NOT written here, because RABA-derived results are not published until MKGP gives written permission (raba.mkgp@gov.si). Fill in from the local run once permission is granted.»",
+        "evidence": "«PENDING: the replication numbers come from the national Land Use database (MKGP RABA). They are computed locally (results/local/validation.csv) and are NOT written here, because RABA-derived results are not published until MKGP gives written permission (raba.mkgp@gov.si). Fill in from the local run once permission is granted.»\n\nPublic part (may be published): open EU-wide layers inside SAC SI3000276 detect far less change: CORINE change layers 7.4 ha lost from natural grasslands and pastures 2000-2018 (all pastures to mineral extraction, 2000-2006); HRL Grassland 2015-2018 gain and loss classes are labelled unverified by the product; CLC+ Backbone 2018 and 2021 are separate classifications (permanent herbaceous 11,203.1 and 11,273.4 ha). Source: results/summary.json.",
+        "limitations": "Different study area from the paper (its ZRSVN polygon is not published), so absolute hectares are not comparable; shares and relative change are. RABA is updated from orthophoto interpretation on roughly a three-year cycle and its methodology changed over time (classes, minimum mapping unit, interpretation rules; RABA_Read_me.pdf), so part of any change between versions may be methodological; the paper says the same of its extreme values. The date of last change or review (D_OD) appears bulk-updated in recent versions and cannot show how current each area is. Not reviewed by an ecologist."
+      },
+      "provenance": {
+        "outcome": "nanopubs/drafts/05_outcome.md",
+        "label": "nanopubs/drafts/05_outcome.md",
+        "date": "CITATION.cff",
+        "conclusion": "nanopubs/drafts/05_outcome.md",
+        "evidence": "nanopubs/drafts/05_outcome.md",
+        "limitations": "nanopubs/drafts/05_outcome.md"
+      },
+      "manual": [
+        "validationStatus",
+        "confidenceLevel"
+      ],
+      "published_uri": null
+    },
+    {
+      "step": "06_citation",
+      "template_key": "CITATION_CITO",
+      "template_uri": "https://w3id.org/np/RA43F9EoOuzF0xoNUnCMNyFsfIqlsuWDdPHCnN0wCdCAw",
+      "prefill": {
+        "st02": [
+          {
+            "cited": "https://doi.org/10.3986/AGS.14021"
+          },
+          {
+            "cites": "http://purl.org/spar/cito/usesDataFrom",
+            "cited": "https://doi.org/10.2909/3899a4a7-dd0b-4729-b24f-278844f1a686"
+          },
+          {
+            "cites": "http://purl.org/spar/cito/usesDataFrom",
+            "cited": "https://doi.org/10.2909/fe3425ad-a71e-454c-97a9-586613af8191"
+          },
+          {
+            "cites": "http://purl.org/spar/cito/usesDataFrom",
+            "cited": "https://doi.org/10.2909/f30f1000-7cf8-43bb-872c-5eb093911b24"
+          }
+        ]
+      },
+      "provenance": {
+        "st02": "cites = validation status (see 05_outcome); cited = nanopubs/drafts/06_citation.md; further rows = nanopubs/drafts/06_citation.md"
+      },
+      "published_uri": null
+    }
+  ],
+  "carry_forward": [
+    {
+      "from": "01_quote",
+      "into": "02_aida",
+      "field": "project"
+    },
+    {
+      "from": "02_aida",
+      "into": "03_claim",
+      "field": "aida"
+    },
+    {
+      "from": "03_claim",
+      "into": "04_study",
+      "field": "claim"
+    },
+    {
+      "from": "04_study",
+      "into": "05_outcome",
+      "field": "study"
+    },
+    {
+      "from": "05_outcome",
+      "into": "06_citation",
+      "field": "work"
+    }
+  ]
+}
