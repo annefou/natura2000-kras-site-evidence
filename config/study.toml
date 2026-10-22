@@ -1,0 +1,65 @@
+# Study configuration: the one place for identity, funding and repository URLs.
+#
+# Read by pipeline/builders/common.py (crate metadata) and by the notebooks.
+# Everything that used to be a hard-coded constant in the vendored BMD builders
+# (author ORCID, FAIR2Adapt funding, prototype URL) is set here instead.
+#
+# TODO (after the repository is transferred to the GRID4EARTH organisation and then
+# to LifeWatch ERIC): update [repository] below. See README.md § TODO for every
+# other file that carries the repository URL.
+
+[study]
+site = "SI3000276"          # Natura 2000 site code (EEA)
+habitat = "62A0"            # Annex I habitat type under study
+healpix_depth = 13          # ~800 m cells, WGS84 ellipsoid, NESTED
+# CORINE classes used as the land-cover proxy for 62A0 (needs ecologist review):
+proxy_classes = { "321" = "Natural grasslands", "231" = "Pastures" }
+
+[raba]
+# Slovenian Land Use database (MKGP), public archive https://rkg.gov.si/arhiv/RABA/?C=N;O=D
+sites = ["SI3000276"]                 # Natura 2000 sites the service reports on (pilot: Kras)
+comparison_sites = ["SI5000023"]      # SPA Kras, for the boundary question of the validation
+healpix_depth = 15                    # ~200 m cells for the "where" maps
+# Snapshots used as fixed reference points. The paper (Davidovic et al. 2026) does not say which
+# version of each year it used; these choices are ours and are recorded as a deviation.
+baseline = "RABA_2002_SHP.ZIP"        # the only 2002 version in the archive
+reference = ["RABA_2012_12_04.RAR", "RABA_2024_06_30.zip"]
+# 2024-06-30: RABA_Read_me.pdf says the June 30 version is the one usually used for reporting.
+# Matched to the EU layers' periods (CORINE change 2000-2018, HRL Grassland change 2015-2018):
+comparison = ["RABA_2015_06_30.RAR", "RABA_2018_06_30.RAR"]
+
+[repository]
+# TODO: update after transfer (GRID4EARTH org, then LifeWatch ERIC).
+url = "https://github.com/annefou/natura2000-kras-site-evidence"
+pages_url = "https://annefou.github.io/natura2000-kras-site-evidence/"
+
+[[authors]]
+name = "Anne Fouilloux"
+orcid = "https://orcid.org/0000-0002-1784-2920"
+affiliation = "LifeWatch ERIC"
+
+# Funders and grants written into every crate this study builds.
+# An entry with an empty `identifier` is written without one and the builders warn:
+# never fill in a grant number that has not been checked against the grant agreement.
+[[funding]]
+name = "LifeWatch ERIC"
+kind = "Organization"
+identifier = ""
+url = "https://www.lifewatch.eu/"
+
+[[funding]]
+name = "GRID4EARTH2"
+kind = "Grant"
+# TODO: GRID4EARTH2 grant / contract number not found in local files. (The ESA contract
+# 4000147951/25/I-NS found locally is GRID4EARTH phase 1, not GRID4EARTH2.)
+identifier = ""
+funder = ""   # TODO: confirm the funding body (GRID4EARTH phase 1 is an ESA DTE contract; GRID4EARTH2 not checked)
+url = ""
+
+# Acknowledged, not funders of this study: the code reused here was written under these.
+[[acknowledgement]]
+name = "BMD Single Access Point prototype (A. Fouilloux), whose data builders are reused here (vendored in pipeline/builders/)"
+url = "https://github.com/annefou/bmd-sap-prototype"
+[[acknowledgement]]
+name = "FAIR2Adapt (FAIR to Adapt to Climate Change), European Commission grant 101188256, which funded the prototype code"
+url = "https://cordis.europa.eu/project/id/101188256"
