@@ -76,8 +76,22 @@ pixi install
 pixi run snakemake --cores 1     # analysis, HEALPix store, figures, run crate from the committed inputs (offline)
 pixi run rebuild                 # rebuild every EU and GBIF input from its source (network, ~4 min)
 pixi run raba                    # national Land Use database: LOCAL results only, in results/local/ (see below)
+pixi run fire                    # 2022 Kras fire vs land-use change since 2009: LOCAL results only (see below)
+pixi run lidar-check             # read one national LiDAR tile onto HEALPix (summary in results/lidar/)
 pixi run -e tests test           # the template's test suite
 ```
+
+`pixi run fire` tests whether grassland that became overgrown after 2009 burned more than its share in
+the July 2022 Kras fire. It fetches the open inputs (Copernicus EMS EMSR604 burnt area, EFFIS polygon
+206388, Copernicus DEM), samples eight Land Use snapshots (2009-10-16 to 2026-09-30, about 4.5 GB
+downloaded one at a time, about 30 min) on a 25 m grid, counts a change only when two later snapshots
+confirm it, and compares burn rates on HEALPix depth-15 cells (WGS84, NESTED) with a spatial block
+bootstrap. Code is public; results stay in `results/local/fire/` because they derive from the Land Use
+database.
+
+`pixi run lidar-check` downloads tile TM_402_75 (Komen, 66 MB) from the ARSO LiDAR archive (LSS
+2011–2015, CC BY 4.0, "Geodetska uprava Republike Slovenije"), sets EPSG:3794 (the header has no CRS)
+and reports density, classes and HEALPix depth-19 cells.
 
 `pixi run raba` downloads the configured snapshots of the Land Use database (2002, 2012-12-04,
 2015-06-30, 2018-06-30, 2024-06-30) and the latest month-end one, 0.2–0.7 GB each, processes them one at

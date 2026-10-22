@@ -59,6 +59,8 @@ geopandas = ">=1.0"          # RABA (MKGP land use) vectors: read, reproject, cl
 pyogrio = "*"                # fast shapefile reading straight from the downloaded zip
 pyproj = "*"                 # D48/GK (EPSG:3912, RABA <= 2018) -> D96/TM (EPSG:3794)
 libarchive = "*"             # bsdtar: unpacks the RAR snapshots of RABA (2011-2022)
+laspy = ">=2.5"              # national LiDAR point clouds (.laz), pipeline/lidar/
+lazrs-python = "*"           # LAZ decompression backend for laspy
 
 # Pip-only deps go in [pypi-dependencies]. Conda-forge is preferred where available.
 [pypi-dependencies]
@@ -96,6 +98,13 @@ rebuild = "snakemake --cores 1 --config rebuild=1 --forcerun site_crate hrl_gras
 raba = "snakemake --cores 1 --config raba=1"
 # Regenerate the GBIF download request for a person to submit on gbif.org.
 gbif-request = "python pipeline/builders/gbif_request.py --site SI3000276"
+# 2022 Kras fire test (pipeline/fire/): open inputs, then RABA sampling and analysis. RABA-derived
+# results stay in results/local/fire/ (gitignored) until MKGP grants written permission.
+fire-inputs = "bash pipeline/fire/fetch_inputs.sh"
+fire-sample = "python pipeline/fire/sample_points.py RABA_2009_10_16.ZIP RABA_2012_12_04.RAR RABA_2015_06_30.RAR RABA_2018_06_30.RAR RABA_2021_07_06.RAR RABA_2022_06_30.zip RABA_2024_06_30.zip RABA_2026_09_30.zip"
+fire = { cmd = "python pipeline/fire/fire_analysis.py && python pipeline/fire/fire_analysis.py --perimeter=effis", depends-on = ["fire-inputs", "fire-sample"] }
+# National LiDAR feasibility check: one Kras tile onto HEALPix (summary in results/lidar/).
+lidar-check = "python pipeline/lidar/read_tile.py"
 book = "myst build --html"
 lab = "jupyter lab"
 

@@ -1,0 +1,32 @@
+{
+  "tile": "TM_402_75",
+  "block": "b_11",
+  "url": "http://gis.arso.gov.si/lidar/gkot/laz/b_11/D96TM/TM_402_75.laz",
+  "las_version": "1.2",
+  "point_format": 1,
+  "points": 16159244,
+  "header_crs": "None",
+  "crs_used": "EPSG:3794",
+  "density_all_pts_m2": 16.15,
+  "density_ground_pts_m2": 6.95,
+  "classes": {
+    "never classified": 1087489,
+    "unclassified": 5561,
+    "ground": 6949162,
+    "low vegetation": 980092,
+    "medium vegetation": 1140431,
+    "high vegetation": 5500707,
+    "building": 481386,
+    "noise": 14416
+  },
+  "healpix": {
+    "library": "healpix-geo",
+    "ellipsoid": "WGS84",
+    "indexing": "nested",
+    "depth": 19,
+    "cells": 6690,
+    "cells_with_ground": 6650
+  },
+  "height_range_gt_2m_share": 0.92,
+  "height_range_gt_5m_share": 0.709
+}
