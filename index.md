@@ -1,4 +1,4 @@
-# {{REPO_NAME}}
+# natura2000-kras-site-evidence
 
 > **{{PAPER_TITLE}}** — replication study.
 >
@@ -13,8 +13,8 @@ This repository is a self-contained replication of the headline claim from the r
 ## Quick start
 
 ```bash
-git clone https://github.com/{{REPO_ORG}}/{{REPO_NAME}}.git
-cd {{REPO_NAME}}
+git clone https://github.com/annefou/natura2000-kras-site-evidence.git
+cd natura2000-kras-site-evidence
 pixi install
 pixi run snakemake --cores 1
 ```
@@ -22,7 +22,7 @@ pixi run snakemake --cores 1
 Or with Docker:
 
 ```bash
-docker run --rm ghcr.io/{{REPO_ORG}}/{{REPO_NAME}}:latest
+docker run --rm ghcr.io/annefou/natura2000-kras-site-evidence:latest
 ```
 
 ## Structure

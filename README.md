@@ -1,15 +1,15 @@
-# {{REPO_NAME}}
+# natura2000-kras-site-evidence
 
-[![CI](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/ci.yml/badge.svg)](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/ci.yml)
-[![Jupyter Book](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/jupyter-book.yml/badge.svg)](https://{{REPO_ORG}}.github.io/{{REPO_NAME}}/)
-[![Docker](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/actions/workflows/docker.yml/badge.svg)](https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/pkgs/container/{{REPO_NAME}})
+[![CI](https://github.com/annefou/natura2000-kras-site-evidence/actions/workflows/ci.yml/badge.svg)](https://github.com/annefou/natura2000-kras-site-evidence/actions/workflows/ci.yml)
+[![Jupyter Book](https://github.com/annefou/natura2000-kras-site-evidence/actions/workflows/jupyter-book.yml/badge.svg)](https://annefou.github.io/natura2000-kras-site-evidence/)
+[![Docker](https://github.com/annefou/natura2000-kras-site-evidence/actions/workflows/docker.yml/badge.svg)](https://github.com/annefou/natura2000-kras-site-evidence/pkgs/container/natura2000-kras-site-evidence)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![DOI](https://zenodo.org/badge/DOI/{{ZENODO_DOI}}.svg)]({{ZENODO_DOI}})
 [![FAIR4RS](https://img.shields.io/badge/FAIR4RS-conformant-brightgreen)](docs/fair4rs-checklist.md)
 [![FORRT](https://img.shields.io/badge/FORRT-replication-blue)](https://forrt.org/)
 [![Science Live](https://img.shields.io/badge/Science%20Live-nanopub%20chain-purple)](nanopubs/PUBLISHED.md)
 [![RO-Crate](https://img.shields.io/badge/RO--Crate-1.2-orange)](ro-crate-metadata.json)
-[![Software Heritage](https://archive.softwareheritage.org/badge/origin/https://github.com/{{REPO_ORG}}/{{REPO_NAME}}/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/{{REPO_ORG}}/{{REPO_NAME}})
+[![Software Heritage](https://archive.softwareheritage.org/badge/origin/https://github.com/annefou/natura2000-kras-site-evidence/)](https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/annefou/natura2000-kras-site-evidence)
 
 > **{{PAPER_TITLE}}** — replication study.
 > Reference paper: [{{PAPER_DOI}}](https://doi.org/{{PAPER_DOI}})
@@ -21,8 +21,8 @@ This is a self-contained replication of the headline claim of the reference pape
 ## Quick start
 
 ```bash
-git clone https://github.com/{{REPO_ORG}}/{{REPO_NAME}}.git
-cd {{REPO_NAME}}
+git clone https://github.com/annefou/natura2000-kras-site-evidence.git
+cd natura2000-kras-site-evidence
 pixi install
 pixi run snakemake --cores 1
 ```
@@ -32,10 +32,10 @@ pixi run snakemake --cores 1
 Or with Docker:
 
 ```bash
-docker run --rm ghcr.io/{{REPO_ORG}}/{{REPO_NAME}}:latest
+docker run --rm ghcr.io/annefou/natura2000-kras-site-evidence:latest
 ```
 
-The Jupyter Book version is at <https://{{REPO_ORG}}.github.io/{{REPO_NAME}}/>.
+The Jupyter Book version is at <https://annefou.github.io/natura2000-kras-site-evidence/>.
 
 ## Built from a template
 
