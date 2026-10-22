@@ -52,7 +52,7 @@ PAPER_CLASSES = ["Grasslands", "Overgrown areas", "Forest"]
 
 
 def save(fig, name: str) -> None:
-    fig.text(0.01, -0.03, NOTE, fontsize=6.5, color=INK2)
+    fig.text(0.01, -0.17, NOTE, fontsize=6.5, color=INK2)
     fig.savefig(FIG / f"{name}.png", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
@@ -163,7 +163,7 @@ def main() -> None:
         ax.set_ylabel("share of area (%)")
     axes[0].legend(frameon=False, fontsize=7, loc="best")
     fig.suptitle("Land-use shares: national Land Use database on SAC SI3000276 vs the paper's study area", x=0.01,
-                 ha="left", fontsize=11)
+                 y=1.05, ha="left", fontsize=11)
     save(fig, "a_shares_vs_paper")
 
     # ---- (a2) service classes, areas ---------------------------------------------------------
@@ -181,7 +181,7 @@ def main() -> None:
         ax.grid(axis="y", color=GRID, lw=0.6)
     axes[0].set_ylabel(f"area inside {SITE} (ha)")
     fig.suptitle("Service classes inside SAC SI3000276, every snapshot aggregated: " + ", ".join(label(s) for s in order),
-                 x=0.01, ha="left", fontsize=10)
+                 x=0.01, y=1.04, ha="left", fontsize=10)
     save(fig, "a_service_areas")
 
     # ---- (b) change map 2002 -> latest on HEALPix cells ----------------------------------------
@@ -203,7 +203,7 @@ def main() -> None:
         fig.colorbar(pc, ax=ax, shrink=0.55, label=f"change per cell, ha (cell ≈ 3.9 ha)")
         ax.set_title(f"{title}\n{base} → {label(latest)}", loc="left", fontsize=10)
     fig.suptitle(f"Where the change is: HEALPix depth {DEPTH} cells (WGS84, NESTED), from a 25 m sample of the "
-                 "Land Use database", x=0.01, ha="left", fontsize=10)
+                 "Land Use database", x=0.01, y=1.04, ha="left", fontsize=10)
     save(fig, "b_change_map")
 
     # ---- (c) currency map (D_OD) ---------------------------------------------------------------
@@ -222,7 +222,8 @@ def main() -> None:
         cur = pd.read_csv(RABA / latest / "currency.csv").set_index("area_of_interest").loc[SITE]
         ax.set_title(f"How current is the snapshot of {latest}?\nmedian D_OD {cur.dod_median}; reviewed in the last "
                      f"12 months: {cur.share_reviewed_last_12_months_pct:.0f} % of the site, last 36 months: "
-                     f"{cur.share_reviewed_last_36_months_pct:.0f} %", loc="left", fontsize=9.5)
+                     f"{cur.share_reviewed_last_36_months_pct:.0f} %\nCaution: D_OD appears reset in each archived version; not a measure of re-interpretation",
+                     loc="left", fontsize=9)
         save(fig, "c_currency_map")
 
     # ---- (d) EU layers vs RABA over matched periods --------------------------------------------
@@ -247,7 +248,7 @@ def main() -> None:
     pairs.append((f"2002–{latest[:4]}", "(no EU layer)", np.nan, f"RABA 2002 → {label(latest)}", gs[latest] - gs[base]))
     rows = []
     for period, eu_name, eu_v, r_name, r_v in pairs:
-        rows += [{"period": period, "source": eu_name, "grassland_change_ha": eu_v},
+        rows += [{"period": period, "source": eu_name, "grassland_change_ha": None if np.isnan(eu_v) else round(float(eu_v), 1)},
                  {"period": period, "source": r_name, "grassland_change_ha": round(float(r_v), 1)}]
     pd.DataFrame(rows).to_csv(LOCAL / "eu_vs_raba.csv", index=False)
     fig, ax = plt.subplots(figsize=(8, 3.6))
@@ -265,7 +266,7 @@ def main() -> None:
     ax.set_xlabel(f"change in grassland area inside {SITE} (ha)")
     ax.grid(axis="x", color=GRID, lw=0.6)
     ax.legend(handles=[Patch(color=BLUE, label="open EU-wide layer"), Patch(color=ORANGE, label="national Land Use database")],
-              frameon=False, fontsize=7.5, loc="lower left")
+              frameon=False, fontsize=7.5, loc="upper center", bbox_to_anchor=(0.5, -0.2), ncol=2)
     lo = min(0, *(p[4] for p in pairs), *(p[2] for p in pairs if not np.isnan(p[2])))
     hi = max(0, *(p[4] for p in pairs), *(p[2] for p in pairs if not np.isnan(p[2])))
     ax.set_xlim(lo * 1.9 - 200, hi * 1.9 + 200)
@@ -298,7 +299,9 @@ def main() -> None:
     lines += ["", f"**How current:** median date of last change or review (D_OD) {cur.get('dod_median')}; "
               f"{cur.get('share_reviewed_last_12_months_pct')} % of the site reviewed in the 12 months before the snapshot, "
               f"{cur.get('share_reviewed_last_36_months_pct')} % in the last 36 months. RABA_Read_me.pdf: on average about one "
-              "third of Slovenia is updated each year, so a monthly snapshot is not a monthly observation.", ""]
+              "third of Slovenia is updated each year, so a monthly snapshot is not a monthly observation. CAUTION: in every archived "
+              "version examined, D_OD of all polygons falls within weeks before the snapshot date, so D_OD looks reset when a "
+              "version is produced and these shares overstate how recently each area was re-interpreted. To be clarified with MKGP.", ""]
     (LOCAL / "latest.md").write_text("\n".join(lines) + "\n")
 
     # ---- run crate (local) ---------------------------------------------------------------------
