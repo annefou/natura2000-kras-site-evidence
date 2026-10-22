@@ -1,0 +1,53 @@
+name: Service update (monthly)
+
+# Monthly refresh of the public (EU-data) layers, a few days after the Land Use database publishes its
+# month-end snapshot. It rebuilds the EU and species inputs from source, re-runs the analysis and uploads
+# the outputs as a workflow artefact for review. It commits nothing and publishes nothing.
+#
+# The Land Use database (MKGP RABA) step is DISABLED on purpose: results derived from it are not
+# published until MKGP gives written permission (README.md § Data licensing). When permission is
+# granted, enable the commented step below and decide where its outputs may go.
+
+on:
+  schedule:
+    - cron: "0 6 5 * *"   # 06:00 UTC on the 5th of every month
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Check repository readiness
+        id: guard
+        uses: ./.github/actions/check-ready
+
+      - name: Set up pixi
+        if: steps.guard.outputs.ready == 'true'
+        uses: prefix-dev/setup-pixi@v0.9.6
+        with:
+          pixi-version: v0.68.1
+          locked: true
+          cache: true
+
+      - name: Rebuild the EU and species inputs, then the analysis
+        if: steps.guard.outputs.ready == 'true'
+        run: pixi run rebuild
+
+      # DISABLED until MKGP permission (see the header):
+      # - name: Land Use database, latest month-end snapshot (local results only)
+      #   run: pixi run raba
+
+      - name: Upload outputs for review
+        if: always() && steps.guard.outputs.ready == 'true'
+        uses: actions/upload-artifact@v5
+        with:
+          name: service-update
+          path: |
+            results/
+            figures/
+            !results/local/

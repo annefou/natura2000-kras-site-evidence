@@ -1,0 +1,47 @@
+name: Scientific review
+description: A claim, figure or step that is wrong, missing or overstated. Corrections are credited.
+title: "[Review] "
+labels: ["scientific review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reviewing this draft. Corrections are credited by name (and ORCID, if you give one)
+        in the study and in any later release. Points where expert input is especially wanted: the 62A0
+        trend statement; the official labels of the Article 17 pressure codes beyond PA05; whether CORINE
+        natural grasslands + pastures is a fair proxy for 62A0 on Kras; national datasets that could replace
+        the 2004 bat records.
+  - type: input
+    id: where
+    attributes:
+      label: Which claim, figure or step?
+      description: A file, figure name, notebook section or quoted sentence.
+      placeholder: "e.g. results/summary.json 'statement', figures/main_result.png, notebooks/03_analysis.py § 2"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: With a source where possible (reference, DOI, dataset, report).
+    validations:
+      required: false
+  - type: input
+    id: reviewer
+    attributes:
+      label: Your name and affiliation (optional)
+    validations:
+      required: false
+  - type: input
+    id: orcid
+    attributes:
+      label: ORCID (optional)
+      placeholder: "0000-0000-0000-0000"
+    validations:
+      required: false

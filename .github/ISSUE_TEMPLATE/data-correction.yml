@@ -1,0 +1,49 @@
+name: Data or site correction
+description: Standard Data Form, Article 17 code labels, boundaries, or national data that could fill a gap.
+title: "[Data] "
+labels: ["data correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for corrections to the data this study uses or for data it should use. Corrections
+        are credited by name (and ORCID, if you give one).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of correction?
+      options:
+        - Standard Data Form (habitats, species, site information)
+        - Article 17 (status, pressure-code labels)
+        - Site or study-area boundary
+        - National data that could fill a gap (e.g. Proteus anguinus records, bat monitoring)
+        - Land Use database (RABA) use or interpretation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What should change?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source
+      description: Where the correct data can be found (link, DOI, contact), and under what licence if known.
+    validations:
+      required: false
+  - type: input
+    id: reviewer
+    attributes:
+      label: Your name and affiliation (optional)
+    validations:
+      required: false
+  - type: input
+    id: orcid
+    attributes:
+      label: ORCID (optional)
+      placeholder: "0000-0000-0000-0000"
+    validations:
+      required: false
