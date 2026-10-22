@@ -1,0 +1,17 @@
+habitat_code,region,period,overall,overall_trend,previous_overall,reason_status_change,range,area,structure_functions,future_prospects,area_km2,area_km2_min,area_km2_max,area_trend,area_trend_period,reason_area_change,condition_good_km2,condition_notgood_km2,condition_unknown_km2
+5130,CON,2013-2018,FV,S,FV,noChange,FV,FV,FV,FV,104,,,S,2007-2018,knowledge,104,0,0
+6110,CON,2013-2018,U1,Unk,U1,noChange,FV,U1,XX,U1,128,,,D,2007-2018,knowledge,96,32,0
+62A0,CON,2013-2018,U2,D,U2,noChange,FV,U2,U2,U2,194,,,D,2007-2018,knowledge,100,94,0
+8160,CON,2013-2018,FV,S,FV,noChange,FV,FV,FV,FV,8,,,S,2007-2018,noChange,8,0,0
+8210,CON,2013-2018,U1,S,U1,noChange,FV,FV,U1,FV,7,,,S,2007-2018,noChange,0,0,7
+8310,CON,2013-2018,U1,Unk,FV,genuine;knowledge,FV,XX,U1,XX,,284,309,Unk,2007-2018,noChange,0,9,287.5
+91K0,CON,2013-2018,FV,S,FV,noChange,FV,FV,FV,FV,2653,,,S,2007-2017,knowledge,2050,603,0
+9340,CON,2013-2018,U1,S,U1,noChange,FV,U1,FV,FV,0.4,,,S,2007-2017,knowledge,0.4,0,0
+5130,CON,2019-2024,FV,S,,noChange,FV,FV,FV,FV,104,,,S,2013-2024,noChange,104,0,0
+6110,CON,2019-2024,U2,D,,method,FV,U2,U1,U1,5.4,,,D,2013-2024,method,4.85,0.55,0
+62A0,CON,2019-2024,U2,D,,noChange,FV,U2,U2,U2,172,,,D,2013-2024,method,86,86,0
+8160,CON,2019-2024,FV,S,,noChange,FV,FV,FV,FV,1.9,,,S,2013-2024,method,1.9,0,0
+8210,CON,2019-2024,FV,S,,knowledge,FV,FV,XX,FV,5.4,,,S,2013-2024,method,0,0,5.4
+8310,CON,2019-2024,XX,Unk,,unknown,FV,XX,XX,XX,124,,,Unk,2013-2024,knowledge;method,0,9,115
+91K0,CON,2019-2024,FV,S,,noChange,FV,FV,FV,FV,1343,,,S,2013-2024,knowledge,1240,141,0
+9340,CON,2019-2024,FV,S,,method;knowledge,FV,FV,FV,FV,0.4,,,S,2013-2024,noChange,0.4,0,0

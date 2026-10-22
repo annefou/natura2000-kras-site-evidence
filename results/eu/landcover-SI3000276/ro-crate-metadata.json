@@ -1,0 +1,253 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        },
+        {
+          "@id": "https://w3id.org/ro/terms/earth-science"
+        }
+      ],
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Land cover inside Kras (SI3000276), CORINE 2000-2018",
+      "description": "Area of each CORINE Land Cover class inside the Natura 2000 site SI3000276 in 2000, 2006, 2012 and 2018, and the mapped changes between inventories, clipped to the site boundary and measured in EPSG:3035. Change is taken from the CLC-Change layers, as the Copernicus Land Monitoring Service advises, not by subtracting status layers. Minimum mapping unit 25 ha for status layers and 5 ha for change layers; minimum width of linear elements 100 m (EEA service description). CLC 1990 covers the site but is not used: CLMS publishes no consistent 1990 accounting layer. CORINE classes are land cover, not Annex I habitat types.",
+      "datePublished": "2026-10-22",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.2909/8b85b479-6afb-42c6-817c-11d1a5260b83"
+        },
+        {
+          "@id": "https://doi.org/10.2909/93eede6e-c196-40e3-9253-7f2237b49de1"
+        },
+        {
+          "@id": "https://doi.org/10.2909/916c0ee7-9711-4996-9876-95ea45ce1d27"
+        },
+        {
+          "@id": "https://doi.org/10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0"
+        },
+        {
+          "@id": "https://doi.org/10.2909/3899a4a7-dd0b-4729-b24f-278844f1a686"
+        },
+        {
+          "@id": "https://doi.org/10.2909/fe3425ad-a71e-454c-97a9-586613af8191"
+        },
+        {
+          "@id": "https://doi.org/10.2909/f30f1000-7cf8-43bb-872c-5eb093911b24"
+        },
+        {
+          "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+        },
+        {
+          "@id": "https://land.copernicus.eu/en/faq/products/corine-land-cover/should-i-use-corine-land-cover-status-or-change-products-to-analyze-the-differences-between-2000-and-2018"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "clc-status-areas.csv"
+        },
+        {
+          "@id": "clc-changes.csv"
+        },
+        {
+          "@id": "clc-2000.geojson"
+        },
+        {
+          "@id": "clc-2006.geojson"
+        },
+        {
+          "@id": "clc-2012.geojson"
+        },
+        {
+          "@id": "clc-2018.geojson"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-grid4earth2"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "https://www.lifewatch.eu/"
+        }
+      ],
+      "creditText": "BMD Single Access Point prototype (A. Fouilloux), whose data builders are reused here (vendored in pipeline/builders/); FAIR2Adapt (FAIR to Adapt to Climate Change), European Commission grant 101188256, which funded the prototype code",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "keywords": [
+        "Natura 2000",
+        "SI3000276",
+        "CORINE Land Cover",
+        "land cover change"
+      ],
+      "temporalCoverage": "2000/2018",
+      "conditionsOfAccess": "Copernicus Land Monitoring Service data: free of charge, for any purpose (CLMS).",
+      "about": {
+        "@id": "SI3000276"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://www.lifewatch.eu/",
+      "@type": "Organization",
+      "name": "LifeWatch ERIC"
+    },
+    {
+      "@id": "#grant-grid4earth2",
+      "@type": "Grant",
+      "name": "GRID4EARTH2"
+    },
+    {
+      "@id": "https://doi.org/10.2909/8b85b479-6afb-42c6-817c-11d1a5260b83",
+      "@type": "Dataset",
+      "name": "CORINE Land Cover 2000 (vector), Europe",
+      "version": "V2020_20u1",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency"
+    },
+    {
+      "@id": "https://doi.org/10.2909/93eede6e-c196-40e3-9253-7f2237b49de1",
+      "@type": "Dataset",
+      "name": "CORINE Land Cover 2006 (vector), Europe",
+      "version": "V2020_20u1",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency"
+    },
+    {
+      "@id": "https://doi.org/10.2909/916c0ee7-9711-4996-9876-95ea45ce1d27",
+      "@type": "Dataset",
+      "name": "CORINE Land Cover 2012 (vector), Europe",
+      "version": "V2020_20u1",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency"
+    },
+    {
+      "@id": "https://doi.org/10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0",
+      "@type": "Dataset",
+      "name": "CORINE Land Cover 2018 (vector), Europe",
+      "version": "V2020_20u1",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency"
+    },
+    {
+      "@id": "https://doi.org/10.2909/3899a4a7-dd0b-4729-b24f-278844f1a686",
+      "@type": "Dataset",
+      "name": "CORINE Land Cover Change 2000-2006 (vector), Europe",
+      "version": "V2020_20u1",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency"
+    },
+    {
+      "@id": "https://doi.org/10.2909/fe3425ad-a71e-454c-97a9-586613af8191",
+      "@type": "Dataset",
+      "name": "CORINE Land Cover Change 2006-2012 (vector), Europe",
+      "version": "V2020_20u1",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency"
+    },
+    {
+      "@id": "https://doi.org/10.2909/f30f1000-7cf8-43bb-872c-5eb093911b24",
+      "@type": "Dataset",
+      "name": "CORINE Land Cover Change 2012-2018 (vector), Europe",
+      "version": "V2020_20u1",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency"
+    },
+    {
+      "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4",
+      "@type": "Dataset",
+      "name": "Site boundary, Natura 2000 end-2024 release, European Environment Agency"
+    },
+    {
+      "@id": "https://land.copernicus.eu/en/faq/products/corine-land-cover/should-i-use-corine-land-cover-status-or-change-products-to-analyze-the-differences-between-2000-and-2018",
+      "@type": "WebPage",
+      "name": "CLMS FAQ: status or change products for 2000-2018"
+    },
+    {
+      "@id": "clc-status-areas.csv",
+      "@type": "File",
+      "name": "Land cover inside the site, per year",
+      "description": "58 rows: year, CLC class, area (ha), share of the site. Minimum mapping unit 25 ha for status layers and 5 ha for change layers; minimum width of linear elements 100 m (EEA service description). CLC 1990 covers the site but is not used: CLMS publishes no consistent 1990 accounting layer.",
+      "encodingFormat": "text/csv",
+      "contentSize": "2848",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "clc-changes.csv",
+      "@type": "File",
+      "name": "Mapped land-cover change inside the site",
+      "description": "12 rows: period, from class, to class, area (ha). 5 ha minimum mapping unit.",
+      "encodingFormat": "text/csv",
+      "contentSize": "940",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.2909/f30f1000-7cf8-43bb-872c-5eb093911b24"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "clc-2000.geojson",
+      "@type": "File",
+      "name": "Land cover 2000, clipped to the site",
+      "description": "CLC polygons clipped to the site boundary, EPSG:4326, for display.",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "3946227",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.2909/8b85b479-6afb-42c6-817c-11d1a5260b83"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "clc-2006.geojson",
+      "@type": "File",
+      "name": "Land cover 2006, clipped to the site",
+      "description": "CLC polygons clipped to the site boundary, EPSG:4326, for display.",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "3706424",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.2909/93eede6e-c196-40e3-9253-7f2237b49de1"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "clc-2012.geojson",
+      "@type": "File",
+      "name": "Land cover 2012, clipped to the site",
+      "description": "CLC polygons clipped to the site boundary, EPSG:4326, for display.",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "3658964",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.2909/916c0ee7-9711-4996-9876-95ea45ce1d27"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "clc-2018.geojson",
+      "@type": "File",
+      "name": "Land cover 2018, clipped to the site",
+      "description": "CLC polygons clipped to the site boundary, EPSG:4326, for display.",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "3654866",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0"
+      },
+      "dateCreated": "2026-10-22"
+    }
+  ]
+}

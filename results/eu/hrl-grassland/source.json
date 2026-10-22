@@ -1,0 +1,18 @@
+{
+  "retrieved": "2026-10-22T14:59:31+00:00",
+  "site": "SI3000276",
+  "layers": {
+    "HRL_Grassland_2018": {
+      "url": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_Grassland_2018/ImageServer",
+      "pixel_m": 10,
+      "copyright": "European Environment Agency (EEA)",
+      "description": "The HRL Grassland 2018 raster product has been created in frame of the \u201cEEA/IDM/R0/18/009 - High Resolution land cover characteristics for the 2018 reference year\u201d as part of the EEA Copernicus Land Monitoring Service (CLMS, https://land.copernicus.eu/). The HRL Grassland 2018 Raster product provides a basic land cover classification with 2 thematic classes (grassland / non-grassland) at 10m spati"
+    },
+    "HRL_GrasslandChange_15_18": {
+      "url": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_GrasslandChange_15_18/ImageServer",
+      "pixel_m": 20,
+      "copyright": "European Environment Agency (EEA)",
+      "description": "The HRL Grassland Change Layer 2015-2018 raster product has been created in frame of the \u201cEEA/IDM/R0/18/009 - High Resolution land cover characteristics for the 2018 reference year\u201d as part of the EEA Copernicus Land Monitoring Service (CLMS, https://land.copernicus.eu/). The HRL GRAC 1518 raster product at 20m resolution provides information on changes in grassland vegetation cover between the re"
+    }
+  }
+}

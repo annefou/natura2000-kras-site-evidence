@@ -1,0 +1,192 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        },
+        {
+          "@id": "https://w3id.org/ro/terms/earth-science"
+        }
+      ],
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Records of the qualifying species inside Kras (SI3000276), GBIF",
+      "description": "GBIF occurrence records of the 25 species and subspecies of the site's Standard Data Form, from download https://doi.org/10.15468/dl.5epzsz (423 records in a shape covering the site), clipped to the exact site boundary: 290 presence records kept. Each record is placed on HEALPix depth 13 (~796 m, WGS84, NESTED) with the cells its stated positional uncertainty covers, by healpix-connector 0.1.0. Records are opportunistic observations: their number per year reflects observer effort as much as occurrence, so counts are not abundance and a change in records is not a change in population. 164 of the 423 records come from iNaturalist Research-grade Observations. Licence is GBIF's for the download (the most restrictive of its datasets). Observer names are not included.",
+      "datePublished": "2026-10-22",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.15468/dl.5epzsz"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22904851"
+        },
+        {
+          "@id": "https://www.checklistbank.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "occurrences.csv"
+        },
+        {
+          "@id": "species-years.csv"
+        },
+        {
+          "@id": "species-summary.csv"
+        },
+        {
+          "@id": "datasets.csv"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-grid4earth2"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "https://www.lifewatch.eu/"
+        }
+      ],
+      "creditText": "BMD Single Access Point prototype (A. Fouilloux), whose data builders are reused here (vendored in pipeline/builders/); FAIR2Adapt (FAIR to Adapt to Climate Change), European Commission grant 101188256, which funded the prototype code",
+      "license": {
+        "@id": "http://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      "keywords": [
+        "Natura 2000",
+        "SI3000276",
+        "GBIF",
+        "species occurrence",
+        "Austropotamobius pallipes",
+        "Bombina variegata",
+        "Cerambyx cerdo",
+        "Coenonympha oedippus",
+        "Erannis ankeraria",
+        "Eriogaster catax",
+        "Euphydryas aurinia",
+        "Euplagia quadripunctaria",
+        "Himantoglossum adriaticum",
+        "Klasea lycopifolia",
+        "Leptodirus hochenwartii",
+        "Lucanus cervus",
+        "Miniopterus schreibersii",
+        "Moehringia tommasinii",
+        "Morimus asper funereus",
+        "Myotis blythii",
+        "Myotis capaccinii",
+        "Myotis emarginatus",
+        "Myotis myotis",
+        "Proteus anguinus",
+        "Rhinolophus euryale",
+        "Rhinolophus ferrumequinum",
+        "Rhinolophus hipposideros",
+        "Triturus carnifex",
+        "Vertigo angustior"
+      ],
+      "about": {
+        "@id": "SI3000276"
+      },
+      "usageInfo": "Records are opportunistic observations: their number per year reflects observer effort as much as occurrence, so counts are not abundance and a change in records is not a change in population."
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://www.lifewatch.eu/",
+      "@type": "Organization",
+      "name": "LifeWatch ERIC"
+    },
+    {
+      "@id": "#grant-grid4earth2",
+      "@type": "Grant",
+      "name": "GRID4EARTH2"
+    },
+    {
+      "@id": "https://doi.org/10.15468/dl.5epzsz",
+      "@type": "Dataset",
+      "name": "GBIF Occurrence Download 10.15468/dl.5epzsz",
+      "publisher": "GBIF.org",
+      "dateCreated": "2026-10-22",
+      "license": {
+        "@id": "http://creativecommons.org/licenses/by-nc/4.0/"
+      },
+      "creditText": "GBIF.org (2026-10-22) GBIF Occurrence Download https://doi.org/10.15468/dl.5epzsz"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22904851",
+      "@type": "SoftwareSourceCode",
+      "name": "healpix-connector",
+      "version": "0.1.0"
+    },
+    {
+      "@id": "https://www.checklistbank.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b",
+      "@type": "Dataset",
+      "name": "Catalogue of Life XR (taxonomy used to match the Standard Data Form names)"
+    },
+    {
+      "@id": "occurrences.csv",
+      "@type": "File",
+      "name": "Presence records inside the site",
+      "description": "290 records with cell and uncertainty footprint at depth 13. Excluded inside the site: none.",
+      "encodingFormat": "text/csv",
+      "contentSize": "68307",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.15468/dl.5epzsz"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "species-years.csv",
+      "@type": "File",
+      "name": "Records and occupied cells per species and year",
+      "description": "Records are opportunistic observations: their number per year reflects observer effort as much as occurrence, so counts are not abundance and a change in records is not a change in population.",
+      "encodingFormat": "text/csv",
+      "contentSize": "2549",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.15468/dl.5epzsz"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "species-summary.csv",
+      "@type": "File",
+      "name": "Per species summary",
+      "description": "Records, years covered, share and median of stated positional uncertainty.",
+      "encodingFormat": "text/csv",
+      "contentSize": "1070",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.15468/dl.5epzsz"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "datasets.csv",
+      "@type": "File",
+      "name": "Source datasets of the download",
+      "description": "14 datasets, for citation.",
+      "encodingFormat": "text/csv",
+      "contentSize": "1256",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.15468/dl.5epzsz"
+      },
+      "dateCreated": "2026-10-22"
+    }
+  ]
+}

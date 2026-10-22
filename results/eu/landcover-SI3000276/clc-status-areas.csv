@@ -1,0 +1,59 @@
+year,clc_code,clc_label,area_ha,share_of_site_pct
+2000,112,Discontinuous urban fabric,135.7,0.28
+2000,122,Road and rail networks and associated land,35.2,0.07
+2000,131,Mineral extraction sites,30.3,0.06
+2000,133,Construction sites,0.2,0.0
+2000,142,Sport and leisure facilities,184.9,0.38
+2000,221,Vineyards,120.2,0.25
+2000,231,Pastures,2907.1,6.05
+2000,242,Complex cultivation patterns,2698.0,5.62
+2000,243,"Land principally occupied by agriculture, with significant areas of natural vegetation",3105.7,6.46
+2000,311,Broad-leaved forest,16141.0,33.6
+2000,312,Coniferous forest,5249.2,10.93
+2000,313,Mixed forest,4702.9,9.79
+2000,321,Natural grasslands,2730.4,5.68
+2000,324,Transitional woodland-shrub,10001.5,20.82
+2006,112,Discontinuous urban fabric,135.9,0.28
+2006,122,Road and rail networks and associated land,35.1,0.07
+2006,131,Mineral extraction sites,37.7,0.08
+2006,133,Construction sites,0.2,0.0
+2006,142,Sport and leisure facilities,185.0,0.39
+2006,221,Vineyards,120.1,0.25
+2006,231,Pastures,2899.5,6.04
+2006,242,Complex cultivation patterns,2697.3,5.61
+2006,243,"Land principally occupied by agriculture, with significant areas of natural vegetation",3105.3,6.46
+2006,311,Broad-leaved forest,16057.4,33.42
+2006,312,Coniferous forest,5249.3,10.93
+2006,313,Mixed forest,4755.7,9.9
+2006,321,Natural grasslands,2728.5,5.68
+2006,324,Transitional woodland-shrub,10035.4,20.89
+2012,112,Discontinuous urban fabric,174.2,0.36
+2012,122,Road and rail networks and associated land,151.6,0.32
+2012,131,Mineral extraction sites,41.1,0.09
+2012,142,Sport and leisure facilities,215.8,0.45
+2012,221,Vineyards,294.3,0.61
+2012,223,Olive groves,8.8,0.02
+2012,231,Pastures,2552.3,5.31
+2012,242,Complex cultivation patterns,2374.9,4.94
+2012,243,"Land principally occupied by agriculture, with significant areas of natural vegetation",3363.4,7.0
+2012,311,Broad-leaved forest,16099.5,33.51
+2012,312,Coniferous forest,5412.9,11.27
+2012,313,Mixed forest,4991.7,10.39
+2012,321,Natural grasslands,2795.5,5.82
+2012,324,Transitional woodland-shrub,9554.1,19.89
+2012,333,Sparsely vegetated areas,12.2,0.03
+2018,112,Discontinuous urban fabric,174.2,0.36
+2018,122,Road and rail networks and associated land,151.6,0.32
+2018,131,Mineral extraction sites,41.1,0.09
+2018,142,Sport and leisure facilities,215.8,0.45
+2018,221,Vineyards,294.3,0.61
+2018,223,Olive groves,8.8,0.02
+2018,231,Pastures,2552.3,5.31
+2018,242,Complex cultivation patterns,2374.9,4.94
+2018,243,"Land principally occupied by agriculture, with significant areas of natural vegetation",3394.2,7.07
+2018,311,Broad-leaved forest,16140.9,33.6
+2018,312,Coniferous forest,5261.7,10.95
+2018,313,Mixed forest,4946.9,10.3
+2018,321,Natural grasslands,2795.5,5.82
+2018,324,Transitional woodland-shrub,9678.0,20.14
+2018,333,Sparsely vegetated areas,12.2,0.03

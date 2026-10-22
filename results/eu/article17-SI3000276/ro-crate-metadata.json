@@ -1,0 +1,151 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        },
+        {
+          "@id": "https://w3id.org/ro/terms/earth-science"
+        }
+      ],
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Conservation status of the habitats of Kras (SI3000276), Article 17, SI",
+      "description": "Article 17 conservation status (overall, trend, range, area, structure and functions, future prospects), area, condition and pressures for the 8 habitat types of the site's Standard Data Form, for 2013-2018 and 2019-2024. Slovenia, Continental biogeographical region(s) -- national/regional level, not site level. Regions from the site's Standard Data Form (release 62). Reported reasons for a change in status (genuine, knowledge, method) are kept: a change for knowledge or method is not a change on the ground. 2019-2024: Delivery TECHNICALLY_ACCEPTED; EU dataflow DRAFT.",
+      "datePublished": "2026-10-22",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://sdi.eea.europa.eu/data/7638812a-2063-40bc-b4cc-1b440e00e60e"
+        },
+        {
+          "@id": "https://api.reportnet.europa.eu/dataflow/getPublicDataflow/1525"
+        },
+        {
+          "@id": "https://n2kbackbone.eea.europa.eu/n2kbackbone_back/api/PublicData/GetReleaseDataLegacy?sdfPublic=true&siteCode=SI3000276&releaseId=62"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "art17-status.csv"
+        },
+        {
+          "@id": "art17-pressures.csv"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-grid4earth2"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "https://www.lifewatch.eu/"
+        }
+      ],
+      "creditText": "BMD Single Access Point prototype (A. Fouilloux), whose data builders are reused here (vendored in pipeline/builders/); FAIR2Adapt (FAIR to Adapt to Climate Change), European Commission grant 101188256, which funded the prototype code",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "usageInfo": "CC BY 4.0 applies to this compilation. Quoted source text, and values from sources that state no licence, remain under their sources' terms.",
+      "keywords": [
+        "Article 17",
+        "conservation status",
+        "Habitats Directive",
+        "SI3000276",
+        "5130",
+        "6110",
+        "62A0",
+        "8160",
+        "8210",
+        "8310",
+        "91K0",
+        "9340"
+      ],
+      "spatialCoverage": "SI Continental",
+      "temporalCoverage": "2013/2024",
+      "about": {
+        "@id": "SI3000276"
+      }
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://www.lifewatch.eu/",
+      "@type": "Organization",
+      "name": "LifeWatch ERIC"
+    },
+    {
+      "@id": "#grant-grid4earth2",
+      "@type": "Grant",
+      "name": "GRID4EARTH2"
+    },
+    {
+      "@id": "https://sdi.eea.europa.eu/data/7638812a-2063-40bc-b4cc-1b440e00e60e",
+      "@type": "Dataset",
+      "name": "Conservation status of habitat types and species: datasets from Article 17, Habitats Directive 92/43/EEC reporting (2013-2018) 2020 Tabular Dataset",
+      "publisher": "European Environment Agency",
+      "version": "1.0",
+      "datePublished": "2020-08-27",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "temporalCoverage": "2013/2018"
+    },
+    {
+      "@id": "https://api.reportnet.europa.eu/dataflow/getPublicDataflow/1525",
+      "@type": "Dataset",
+      "name": "Habitats Directive reporting (Art. 17) - 2019-2024, Slovenia's delivery (Reportnet 3)",
+      "publisher": "Slovenia, via Reportnet 3",
+      "temporalCoverage": "2019/2024",
+      "datePublished": "2026-01-23",
+      "creativeWorkStatus": "Delivery TECHNICALLY_ACCEPTED; EU dataflow DRAFT"
+    },
+    {
+      "@id": "https://n2kbackbone.eea.europa.eu/n2kbackbone_back/api/PublicData/GetReleaseDataLegacy?sdfPublic=true&siteCode=SI3000276&releaseId=62",
+      "@type": "Dataset",
+      "name": "Standard Data Form SI3000276, release 62"
+    },
+    {
+      "@id": "art17-status.csv",
+      "@type": "File",
+      "name": "Conservation status per habitat, region and period",
+      "description": "16 rows. Slovenia, Continental biogeographical region(s) -- national/regional level, not site level. Regions from the site's Standard Data Form (release 62). Areas in km2.",
+      "encodingFormat": "text/csv",
+      "contentSize": "1651",
+      "isBasedOn": {
+        "@id": "https://sdi.eea.europa.eu/data/7638812a-2063-40bc-b4cc-1b440e00e60e"
+      },
+      "dateCreated": "2026-10-22"
+    },
+    {
+      "@id": "art17-pressures.csv",
+      "@type": "File",
+      "name": "Pressures and threats per habitat, region and period",
+      "description": "98 rows, with ranking (H/M/L).",
+      "encodingFormat": "text/csv",
+      "contentSize": "3652",
+      "isBasedOn": {
+        "@id": "https://sdi.eea.europa.eu/data/7638812a-2063-40bc-b4cc-1b440e00e60e"
+      },
+      "dateCreated": "2026-10-22"
+    }
+  ]
+}

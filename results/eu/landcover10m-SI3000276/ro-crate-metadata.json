@@ -1,0 +1,124 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        },
+        {
+          "@id": "https://w3id.org/ro/terms/earth-science"
+        }
+      ],
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Land cover at 10 m inside Kras (SI3000276), CLC+ Backbone 2018 and 2021",
+      "description": "Pixel counts and area of each CLC+ Backbone class inside the Natura 2000 site SI3000276, for 2018 and 2021, computed by the EEA image services over the site boundary (EPSG:3035, 10 m pixels). Site area 48,042.4 ha. The two years are separate classifications: their difference mixes real change with differences in classification and is not presented as change. Accuracy per year: see each year's CLMS validation report (cited). CLC+ classes are land cover, not Annex I habitat types.",
+      "datePublished": "2026-10-22",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://doi.org/10.2909/cd534ebf-f553-42f0-9ac1-62c1dc36d32c"
+        },
+        {
+          "@id": "https://doi.org/10.2909/71fc9d1b-479f-4da1-aa66-662a2fff2cf7"
+        },
+        {
+          "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "clcplus-areas.csv"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-grid4earth2"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "https://www.lifewatch.eu/"
+        }
+      ],
+      "creditText": "BMD Single Access Point prototype (A. Fouilloux), whose data builders are reused here (vendored in pipeline/builders/); FAIR2Adapt (FAIR to Adapt to Climate Change), European Commission grant 101188256, which funded the prototype code",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "keywords": [
+        "Natura 2000",
+        "SI3000276",
+        "CLC+ Backbone",
+        "land cover"
+      ],
+      "about": {
+        "@id": "SI3000276"
+      },
+      "temporalCoverage": "2018/2021",
+      "conditionsOfAccess": "Copernicus Land Monitoring Service data: free of charge, for any purpose (CLMS)."
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://www.lifewatch.eu/",
+      "@type": "Organization",
+      "name": "LifeWatch ERIC"
+    },
+    {
+      "@id": "#grant-grid4earth2",
+      "@type": "Grant",
+      "name": "GRID4EARTH2"
+    },
+    {
+      "@id": "https://doi.org/10.2909/cd534ebf-f553-42f0-9ac1-62c1dc36d32c",
+      "@type": "Dataset",
+      "name": "CLCplus Backbone 2018 (raster 10 m), Europe",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency",
+      "citation": {
+        "@id": "https://land.copernicus.eu/en/technical-library/validation-report-clcplus-backbone-2018"
+      }
+    },
+    {
+      "@id": "https://doi.org/10.2909/71fc9d1b-479f-4da1-aa66-662a2fff2cf7",
+      "@type": "Dataset",
+      "name": "CLCplus Backbone 2021 (raster 10 m), Europe",
+      "publisher": "Copernicus Land Monitoring Service, European Environment Agency",
+      "citation": {
+        "@id": "https://land.copernicus.eu/en/technical-library/validation-report-clcplus-backbone-2021"
+      }
+    },
+    {
+      "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4",
+      "@type": "Dataset",
+      "name": "Site boundary, Natura 2000 end-2024 release, European Environment Agency"
+    },
+    {
+      "@id": "clcplus-areas.csv",
+      "@type": "File",
+      "name": "Land cover at 10 m inside the site, 2018 and 2021",
+      "description": "18 rows: year, class, pixels, area (ha), share of classified pixels. The two years are separate classifications: their difference mixes real change with differences in classification and is not presented as change. Accuracy per year: see each year's CLMS validation report (cited).",
+      "encodingFormat": "text/csv",
+      "contentSize": "932",
+      "isBasedOn": {
+        "@id": "https://doi.org/10.2909/71fc9d1b-479f-4da1-aa66-662a2fff2cf7"
+      },
+      "dateCreated": "2026-10-22"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        },
+        {
+          "@id": "https://w3id.org/ro/terms/earth-science"
+        }
+      ],
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Kras (SI3000276), Natura 2000 site",
+      "description": "Site identity, boundary and Standard Data Form for the Natura 2000 site Kras (SI3000276, SI), as reported by the member state in the EEA end-2024 release (released 2024-09-19), retrieved 2026-10-22. Entry point for the site's evidence: links every input used to describe the site's habitats and species.",
+      "datePublished": "2026-10-22",
+      "author": [
+        {
+          "@id": "https://orcid.org/0000-0002-1784-2920"
+        }
+      ],
+      "isBasedOn": [
+        {
+          "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+        }
+      ],
+      "hasPart": [
+        {
+          "@id": "boundary.geojson"
+        },
+        {
+          "@id": "sdf-habitats.csv"
+        },
+        {
+          "@id": "sdf-species.csv"
+        }
+      ],
+      "funding": [
+        {
+          "@id": "#grant-grid4earth2"
+        }
+      ],
+      "funder": [
+        {
+          "@id": "https://www.lifewatch.eu/"
+        }
+      ],
+      "creditText": "BMD Single Access Point prototype (A. Fouilloux), whose data builders are reused here (vendored in pipeline/builders/); FAIR2Adapt (FAIR to Adapt to Climate Change), European Commission grant 101188256, which funded the prototype code",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "identifier": "SI3000276",
+      "keywords": [
+        "Natura 2000",
+        "SI3000276",
+        "Kras"
+      ],
+      "spatialCoverage": "Continental"
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://www.lifewatch.eu/",
+      "@type": "Organization",
+      "name": "LifeWatch ERIC"
+    },
+    {
+      "@id": "#grant-grid4earth2",
+      "@type": "Grant",
+      "name": "GRID4EARTH2"
+    },
+    {
+      "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4",
+      "@type": "Dataset",
+      "name": "Natura 2000 end-2024 release, European Environment Agency",
+      "publisher": "European Environment Agency",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "creditText": "Natura 2000 data - the European network of protected sites, EEA, end-2024 release.",
+      "datePublished": "2024-09-19"
+    },
+    {
+      "@id": "boundary.geojson",
+      "@type": "File",
+      "name": "Site boundary",
+      "description": "Boundary of SI3000276, 48042.4 ha, EPSG:4326.",
+      "encodingFormat": "application/geo+json",
+      "contentSize": "218329",
+      "isBasedOn": {
+        "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+      },
+      "dateCreated": "2026-10-22",
+      "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/2/query?where=SITECODE%3D%27SI3000276%27&outFields=SITECODE%2CSITENAME%2CMS%2CSITETYPE%2CArea_ha%2CRELEASE_DATE&returnGeometry=true&outSR=4326&geometryPrecision=6&f=geojson"
+    },
+    {
+      "@id": "sdf-habitats.csv",
+      "@type": "File",
+      "name": "Qualifying habitats (Standard Data Form)",
+      "description": "8 Annex I habitat types with cover and A/B/C assessment grades.",
+      "encodingFormat": "text/csv",
+      "contentSize": "802",
+      "isBasedOn": {
+        "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+      },
+      "dateCreated": "2026-10-22",
+      "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Sites/MapServer/3/query?f=json&where=SITECODE%3D%27SI3000276%27&outFields=%2A&orderByFields=HABITATCODE"
+    },
+    {
+      "@id": "sdf-species.csv",
+      "@type": "File",
+      "name": "Qualifying species (Standard Data Form)",
+      "description": "39 rows, one per species and population type, with population size and A/B/C assessment grades.",
+      "encodingFormat": "text/csv",
+      "contentSize": "1918",
+      "isBasedOn": {
+        "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+      },
+      "dateCreated": "2026-10-22",
+      "url": "https://bio.discomap.eea.europa.eu/arcgis/rest/services/ProtectedSites/Natura2000Species/MapServer/0/query?f=json&where=SiteCode%3D%27SI3000276%27&outFields=%2A&returnGeometry=false&orderByFields=SpeciesNameClean"
+    }
+  ]
+}

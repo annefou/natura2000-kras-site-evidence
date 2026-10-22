@@ -1,0 +1,32 @@
+{
+  "attributes": {
+    "zarr_conventions": [
+      {
+        "uuid": "7b255807-140c-42ca-97f6-7a1cfecdbc38",
+        "name": "dggs",
+        "schema_url": "https://raw.githubusercontent.com/zarr-conventions/dggs/refs/tags/v1/schema.json",
+        "spec_url": "https://github.com/zarr-conventions/dggs/blob/v1/README.md",
+        "description": "Discrete Global Grid Systems convention for zarr"
+      }
+    ],
+    "dggs": {
+      "name": "healpix",
+      "refinement_level": 13,
+      "indexing_scheme": "nested",
+      "ellipsoid": {
+        "name": "wgs84",
+        "semi_major_axis": 6378137.0,
+        "inverse_flattening": 298.257223563
+      },
+      "spatial_dimension": "cells",
+      "coordinate": "cell_ids",
+      "compression": "none"
+    },
+    "title": "GBIF records of the Standard Data Form species inside Natura 2000 site SI3000276, per HEALPix cell",
+    "source": "GBIF.org GBIF Occurrence Download https://doi.org/10.15468/dl.5epzsz, clipped to the EEA site boundary",
+    "license": "CC BY-NC 4.0 (derived from the download; most restrictive licence among its datasets)",
+    "comment": "Opportunistic records: counts reflect observer effort as much as occurrence; not abundance."
+  },
+  "zarr_format": 3,
+  "node_type": "group"
+}

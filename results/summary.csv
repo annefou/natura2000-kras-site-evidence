@@ -1,0 +1,8 @@
+quantity,value,source
+corine_loss_from_grassland_classes_2000_2018_ha,7.4,"CORINE CLC-Change, inside SAC"
+paper_grassland_change_2002_2024_ha,-2814.9,"Davidovic et al. 2026, Table 2"
+paper_overgrown_change_2002_2024_ha,1645.9,"Davidovic et al. 2026, Table 2"
+hrl_grassland_2018_ha,8219.9,"HRL Grassland 2018, inside SAC"
+clcplus_permanent_herbaceous_2018_ha,11203.1,"CLC+ Backbone, inside SAC"
+clcplus_permanent_herbaceous_2021_ha,11273.4,"CLC+ Backbone, inside SAC"
+gbif_records_inside_site,290.0,doi:10.15468/dl.5epzsz

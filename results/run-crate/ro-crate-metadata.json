@@ -1,0 +1,368 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.2/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      },
+      "conformsTo": [
+        {
+          "@id": "https://w3id.org/ro/crate/1.2"
+        },
+        {
+          "@id": "https://w3id.org/ro/wfrun/process/0.5"
+        }
+      ]
+    },
+    {
+      "@id": "./",
+      "@type": "Dataset",
+      "name": "Open EU-wide evidence on grassland (habitat 62A0) in Natura 2000 site SI3000276 Kras: run 2026-10-22",
+      "description": "Process Run Crate of one execution of the EU-data and species layers of the study. Verdict: EU-wide open data: inconclusive at site level. DRAFT: not deposited; draft; not reviewed by an ecologist or by the Slovenian Distributed Centre (ZRC SAZU).",
+      "version": "2026-10-22",
+      "datePublished": "2026-10-22",
+      "license": {
+        "@id": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "author": {
+        "@id": "https://orcid.org/0000-0002-1784-2920"
+      },
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/wfrun/process/0.5"
+      },
+      "hasPart": [
+        {
+          "@id": "../../results/summary.json"
+        },
+        {
+          "@id": "../../results/summary.csv"
+        },
+        {
+          "@id": "../../results/sources.json"
+        },
+        {
+          "@id": "../../results/validation/targets.csv"
+        },
+        {
+          "@id": "../../results/species/cells.csv"
+        },
+        {
+          "@id": "../../results/healpix/gbif-SI3000276-d13.zarr/"
+        },
+        {
+          "@id": "../../figures/main_result.png"
+        },
+        {
+          "@id": "../../figures/corine_grassland.png"
+        },
+        {
+          "@id": "../../figures/species_years.png"
+        },
+        {
+          "@id": "../../figures/gbif_cells.png"
+        }
+      ],
+      "mentions": {
+        "@id": "#run"
+      },
+      "spatialCoverage": {
+        "@id": "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=SI3000276"
+      },
+      "abstract": "Open EU-wide data cannot tell whether grassland, and with it habitat 62A0, is declining inside Natura 2000 site SI3000276 Kras. Slovenia's Article 17 reports for the Continental region assess 62A0 as unfavourable-bad and declining in 2013-2018 (U2, D) and in 2019-2024 (U2, D), with the reported area falling from 194 to 172 km2, a difference the 2019-2024 report attributes to a change of method; that is national, not site-level. Inside the site, CORINE change layers detect 7.4 ha lost from the grassland classes between 2000 and 2018, all of it pastures to mineral extraction in 2000-2006, while the national Land Use database, as analysed by Davidovic et al. (2026), shows grasslands falling by 2,814.9 ha (-26.9 %) and overgrown areas rising by 1,645.9 ha (+47.3 %) between 2002 and 2024. CORINE's 25 ha mapping unit (5 ha for change) cannot see encroachment at the scale abandonment of grazing works. HRL Grassland's 2015-2018 change classes are labelled unverified by the product, and CLC+ 2018 and 2021 are separate classifications. GBIF records (290 inside the site) are opportunistic and give no abundance trend.",
+      "usageInfo": "Species counts (results/species, results/healpix) derive from GBIF download doi:10.15468/dl.5epzsz and carry its licence, CC BY-NC 4.0."
+    },
+    {
+      "@id": "https://orcid.org/0000-0002-1784-2920",
+      "@type": "Person",
+      "name": "Anne Fouilloux",
+      "affiliation": "LifeWatch ERIC"
+    },
+    {
+      "@id": "https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=SI3000276",
+      "@type": "Place",
+      "name": "SI3000276 Kras (Natura 2000 SAC)",
+      "geo": {
+        "@type": "GeoShape",
+        "description": "results/eu/site-*/boundary-simplified.wkt (EEA, CC BY 4.0)"
+      }
+    },
+    {
+      "@id": "#run",
+      "@type": "CreateAction",
+      "name": "Snakemake run of the EU-data and species layers, 2026-10-22",
+      "endTime": "2026-10-22T15:03:15+00:00",
+      "instrument": {
+        "@id": "../../Snakefile"
+      },
+      "object": [
+        {
+          "@id": "https://api.reportnet.europa.eu/dataflow/getPublicDataflow/1525"
+        },
+        {
+          "@id": "https://doi.org/10.15468/dl.5epzsz"
+        },
+        {
+          "@id": "https://doi.org/10.2909/3899a4a7-dd0b-4729-b24f-278844f1a686"
+        },
+        {
+          "@id": "https://doi.org/10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0"
+        },
+        {
+          "@id": "https://doi.org/10.2909/71fc9d1b-479f-4da1-aa66-662a2fff2cf7"
+        },
+        {
+          "@id": "https://doi.org/10.2909/8b85b479-6afb-42c6-817c-11d1a5260b83"
+        },
+        {
+          "@id": "https://doi.org/10.2909/916c0ee7-9711-4996-9876-95ea45ce1d27"
+        },
+        {
+          "@id": "https://doi.org/10.2909/93eede6e-c196-40e3-9253-7f2237b49de1"
+        },
+        {
+          "@id": "https://doi.org/10.2909/cd534ebf-f553-42f0-9ac1-62c1dc36d32c"
+        },
+        {
+          "@id": "https://doi.org/10.2909/f30f1000-7cf8-43bb-872c-5eb093911b24"
+        },
+        {
+          "@id": "https://doi.org/10.2909/fe3425ad-a71e-454c-97a9-586613af8191"
+        },
+        {
+          "@id": "https://doi.org/10.5281/zenodo.22904851"
+        },
+        {
+          "@id": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_GrasslandChange_15_18/ImageServer"
+        },
+        {
+          "@id": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_Grassland_2018/ImageServer"
+        },
+        {
+          "@id": "https://land.copernicus.eu/en/faq/products/corine-land-cover/should-i-use-corine-land-cover-status-or-change-products-to-analyze-the-differences-between-2000-and-2018"
+        },
+        {
+          "@id": "https://n2kbackbone.eea.europa.eu/n2kbackbone_back/api/PublicData/GetReleaseDataLegacy?sdfPublic=true&siteCode=SI3000276&releaseId=62"
+        },
+        {
+          "@id": "https://sdi.eea.europa.eu/data/7638812a-2063-40bc-b4cc-1b440e00e60e"
+        },
+        {
+          "@id": "https://www.checklistbank.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b"
+        },
+        {
+          "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+        }
+      ],
+      "result": [
+        {
+          "@id": "../../results/summary.json"
+        },
+        {
+          "@id": "../../results/summary.csv"
+        },
+        {
+          "@id": "../../results/sources.json"
+        },
+        {
+          "@id": "../../results/validation/targets.csv"
+        },
+        {
+          "@id": "../../results/species/cells.csv"
+        },
+        {
+          "@id": "../../results/healpix/gbif-SI3000276-d13.zarr/"
+        },
+        {
+          "@id": "../../figures/main_result.png"
+        },
+        {
+          "@id": "../../figures/corine_grassland.png"
+        },
+        {
+          "@id": "../../figures/species_years.png"
+        },
+        {
+          "@id": "../../figures/gbif_cells.png"
+        }
+      ]
+    },
+    {
+      "@id": "../../Snakefile",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../pipeline/builders/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "../../pipeline/collect_eu.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../pipeline/hrl_grassland.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../pipeline/species_cells.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../notebooks/01_data_download.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../notebooks/02_data_clean.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../notebooks/03_analysis.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../notebooks/04_figures.py",
+      "@type": [
+        "File",
+        "SoftwareSourceCode"
+      ]
+    },
+    {
+      "@id": "../../results/summary.json",
+      "@type": "File"
+    },
+    {
+      "@id": "../../results/summary.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "../../results/sources.json",
+      "@type": "File"
+    },
+    {
+      "@id": "../../results/validation/targets.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "../../results/species/cells.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "../../results/healpix/gbif-SI3000276-d13.zarr/",
+      "@type": "Dataset"
+    },
+    {
+      "@id": "../../figures/main_result.png",
+      "@type": "File"
+    },
+    {
+      "@id": "../../figures/corine_grassland.png",
+      "@type": "File"
+    },
+    {
+      "@id": "../../figures/species_years.png",
+      "@type": "File"
+    },
+    {
+      "@id": "../../figures/gbif_cells.png",
+      "@type": "File"
+    },
+    {
+      "@id": "https://api.reportnet.europa.eu/dataflow/getPublicDataflow/1525",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.15468/dl.5epzsz",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/3899a4a7-dd0b-4729-b24f-278844f1a686",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/71fc9d1b-479f-4da1-aa66-662a2fff2cf7",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/8b85b479-6afb-42c6-817c-11d1a5260b83",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/916c0ee7-9711-4996-9876-95ea45ce1d27",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/93eede6e-c196-40e3-9253-7f2237b49de1",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/cd534ebf-f553-42f0-9ac1-62c1dc36d32c",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/f30f1000-7cf8-43bb-872c-5eb093911b24",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.2909/fe3425ad-a71e-454c-97a9-586613af8191",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://doi.org/10.5281/zenodo.22904851",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_GrasslandChange_15_18/ImageServer",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_Grassland_2018/ImageServer",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://land.copernicus.eu/en/faq/products/corine-land-cover/should-i-use-corine-land-cover-status-or-change-products-to-analyze-the-differences-between-2000-and-2018",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://n2kbackbone.eea.europa.eu/n2kbackbone_back/api/PublicData/GetReleaseDataLegacy?sdfPublic=true&siteCode=SI3000276&releaseId=62",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://sdi.eea.europa.eu/data/7638812a-2063-40bc-b4cc-1b440e00e60e",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://www.checklistbank.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b",
+      "@type": "CreativeWork"
+    },
+    {
+      "@id": "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4",
+      "@type": "CreativeWork"
+    }
+  ]
+}

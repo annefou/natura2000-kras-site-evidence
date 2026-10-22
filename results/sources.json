@@ -1,0 +1,81 @@
+[
+  {
+    "input": "Kras (SI3000276), Natura 2000 site",
+    "based_on": [
+      "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+    ],
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved": "2026-10-22",
+    "provenance": "results/eu/site-SI3000276/ro-crate-metadata.json"
+  },
+  {
+    "input": "Conservation status of the habitats of Kras (SI3000276), Article 17, SI",
+    "based_on": [
+      "https://sdi.eea.europa.eu/data/7638812a-2063-40bc-b4cc-1b440e00e60e",
+      "https://api.reportnet.europa.eu/dataflow/getPublicDataflow/1525",
+      "https://n2kbackbone.eea.europa.eu/n2kbackbone_back/api/PublicData/GetReleaseDataLegacy?sdfPublic=true&siteCode=SI3000276&releaseId=62"
+    ],
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved": "2026-10-22",
+    "provenance": "results/eu/article17-SI3000276/ro-crate-metadata.json"
+  },
+  {
+    "input": "Land cover inside Kras (SI3000276), CORINE 2000-2018",
+    "based_on": [
+      "https://doi.org/10.2909/8b85b479-6afb-42c6-817c-11d1a5260b83",
+      "https://doi.org/10.2909/93eede6e-c196-40e3-9253-7f2237b49de1",
+      "https://doi.org/10.2909/916c0ee7-9711-4996-9876-95ea45ce1d27",
+      "https://doi.org/10.2909/71c95a07-e296-44fc-b22b-415f42acfdf0",
+      "https://doi.org/10.2909/3899a4a7-dd0b-4729-b24f-278844f1a686",
+      "https://doi.org/10.2909/fe3425ad-a71e-454c-97a9-586613af8191",
+      "https://doi.org/10.2909/f30f1000-7cf8-43bb-872c-5eb093911b24",
+      "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4",
+      "https://land.copernicus.eu/en/faq/products/corine-land-cover/should-i-use-corine-land-cover-status-or-change-products-to-analyze-the-differences-between-2000-and-2018"
+    ],
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved": "2026-10-22",
+    "provenance": "results/eu/landcover-SI3000276/ro-crate-metadata.json"
+  },
+  {
+    "input": "Land cover at 10 m inside Kras (SI3000276), CLC+ Backbone 2018 and 2021",
+    "based_on": [
+      "https://doi.org/10.2909/cd534ebf-f553-42f0-9ac1-62c1dc36d32c",
+      "https://doi.org/10.2909/71fc9d1b-479f-4da1-aa66-662a2fff2cf7",
+      "https://www.eea.europa.eu/en/datahub/datahubitem-view/6fc8ad2d-195d-40f4-bdec-576e7d1268e4"
+    ],
+    "licence": "https://creativecommons.org/licenses/by/4.0/",
+    "retrieved": "2026-10-22",
+    "provenance": "results/eu/landcover10m-SI3000276/ro-crate-metadata.json"
+  },
+  {
+    "input": "Records of the qualifying species inside Kras (SI3000276), GBIF",
+    "based_on": [
+      "https://doi.org/10.15468/dl.5epzsz",
+      "https://doi.org/10.5281/zenodo.22904851",
+      "https://www.checklistbank.org/dataset/7ddf754f-d193-4cc9-b351-99906754a03b"
+    ],
+    "licence": "http://creativecommons.org/licenses/by-nc/4.0/",
+    "retrieved": "2026-10-22",
+    "provenance": "results/eu/species-SI3000276/ro-crate-metadata.json"
+  },
+  {
+    "input": "Copernicus HRL Grassland 2018 and Grassland Change 2015-2018, inside the site",
+    "based_on": [
+      "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_Grassland_2018/ImageServer",
+      "https://image.discomap.eea.europa.eu/arcgis/rest/services/GioLandPublic/HRL_GrasslandChange_15_18/ImageServer"
+    ],
+    "licence": "CLMS: free of charge, any purpose",
+    "retrieved": "2026-10-22",
+    "provenance": "results/eu/hrl-grassland/source.json"
+  },
+  {
+    "input": "Slovenian Land Use database (MKGP RABA), snapshots RABA_2002_SHP.ZIP, RABA_2012_12_04.RAR, RABA_2024_06_30.zip, latest month-end",
+    "based_on": [
+      "https://rkg.gov.si/arhiv/RABA/?C=N;O=D",
+      "https://rkg.gov.si/arhiv/RABA/RABA_Read_me.pdf"
+    ],
+    "licence": "Not stated in RABA_Read_me.pdf; the 2002 archive's Terms and Conditions restrict use. Used locally only; results not published (permission to be requested from raba.mkgp@gov.si)",
+    "retrieved": null,
+    "provenance": "results/local/raba/<date>/snapshot.json (local only)"
+  }
+]

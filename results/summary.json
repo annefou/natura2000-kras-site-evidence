@@ -1,0 +1,179 @@
+{
+  "site": "SI3000276",
+  "habitat": "62A0",
+  "verdict": "EU-wide open data: inconclusive at site level",
+  "article17": [
+    {
+      "period": "2013-2018",
+      "overall": "U2",
+      "overall_trend": "D",
+      "area_km2": "194",
+      "area_trend": "D",
+      "reason_area_change": "knowledge",
+      "condition_good_km2": "100",
+      "condition_notgood_km2": "94"
+    },
+    {
+      "period": "2019-2024",
+      "overall": "U2",
+      "overall_trend": "D",
+      "area_km2": "172",
+      "area_trend": "D",
+      "reason_area_change": "method",
+      "condition_good_km2": "86",
+      "condition_notgood_km2": "86"
+    }
+  ],
+  "article17_high_pressures": [
+    {
+      "period": "2013-2018",
+      "pressure_code": "A06"
+    },
+    {
+      "period": "2019-2024",
+      "pressure_code": "PA05"
+    }
+  ],
+  "corine_proxy_ha": {
+    "Natural grasslands": {
+      "2000": 2730.4,
+      "2006": 2728.5,
+      "2012": 2795.5,
+      "2018": 2795.5
+    },
+    "Pastures": {
+      "2000": 2907.1,
+      "2006": 2899.5,
+      "2012": 2552.3,
+      "2018": 2552.3
+    }
+  },
+  "corine_loss_from_grassland_classes_2000_2018_ha": 7.4,
+  "corine_loss_detail": [
+    {
+      "period": "2000-2006",
+      "from_code": "231",
+      "from_label": "Pastures",
+      "to_code": "131",
+      "to_label": "Mineral extraction sites",
+      "area_ha": 7.4
+    }
+  ],
+  "corine_gain_to_grassland_classes_2000_2018_ha": 0.0,
+  "corine_forest_to_transitional_shrub_ha": {
+    "2000-2006": 102.0,
+    "2012-2018": 276.0
+  },
+  "clcplus_ha": {
+    "Low-growing woody plants": {
+      "2018": 1440.2,
+      "2021": 1503.3
+    },
+    "Permanent herbaceous": {
+      "2018": 11203.1,
+      "2021": 11273.4
+    }
+  },
+  "hrl_grassland": [
+    {
+      "layer": "HRL_Grassland_2018",
+      "pixel_m": 10,
+      "value": 0,
+      "class_name": NaN,
+      "pixels": 3982264,
+      "share_pct": 82.89,
+      "area_ha": 39822.4
+    },
+    {
+      "layer": "HRL_Grassland_2018",
+      "pixel_m": 10,
+      "value": 1,
+      "class_name": "Grassland",
+      "pixels": 821999,
+      "share_pct": 17.11,
+      "area_ha": 8219.9
+    },
+    {
+      "layer": "HRL_GrasslandChange_15_18",
+      "pixel_m": 20,
+      "value": 0,
+      "class_name": "all non-grassland areas",
+      "pixels": 1905032,
+      "share_pct": 77.424,
+      "area_ha": 37196.4
+    },
+    {
+      "layer": "HRL_GrasslandChange_15_18",
+      "pixel_m": 20,
+      "value": 10,
+      "class_name": "unchanged grassland in both years",
+      "pixels": 149969,
+      "share_pct": 6.095,
+      "area_ha": 2928.2
+    },
+    {
+      "layer": "HRL_GrasslandChange_15_18",
+      "pixel_m": 20,
+      "value": 11,
+      "class_name": "unverified grassland gain",
+      "pixels": 314621,
+      "share_pct": 12.787,
+      "area_ha": 6143.1
+    },
+    {
+      "layer": "HRL_GrasslandChange_15_18",
+      "pixel_m": 20,
+      "value": 22,
+      "class_name": "unverified grassland loss",
+      "pixels": 90892,
+      "share_pct": 3.694,
+      "area_ha": 1774.7
+    }
+  ],
+  "paper_targets": [
+    {
+      "land_use": "Forest",
+      "area_2002_ha": 23375.57,
+      "area_2024_ha": 24618.2,
+      "delta_2002_2024_ha": 1242.6,
+      "delta_2002_2024_pct": 5.3
+    },
+    {
+      "land_use": "Grasslands",
+      "area_2002_ha": 10481.85,
+      "area_2024_ha": 7666.9,
+      "delta_2002_2024_ha": -2814.9,
+      "delta_2002_2024_pct": -26.9
+    },
+    {
+      "land_use": "Overgrown areas",
+      "area_2002_ha": 3478.91,
+      "area_2024_ha": 5124.8,
+      "delta_2002_2024_ha": 1645.9,
+      "delta_2002_2024_pct": 47.3
+    }
+  ],
+  "paper_study_area_ha_2002": 40120.9,
+  "species": {
+    "records_in_download": 423,
+    "records_inside_site": 290,
+    "cells_occupied_depth13": 87,
+    "inaturalist_share_inside_site_pct": 37.9,
+    "sdf_taxa": 25,
+    "sdf_taxa_without_records": [
+      "Austropotamobius pallipes",
+      "Erannis ankeraria",
+      "Miniopterus schreibersii",
+      "Myotis capaccinii",
+      "Proteus anguinus",
+      "Vertigo angustior"
+    ],
+    "bat_records": 38,
+    "bat_records_from_2004_survey": 38,
+    "bat_record_years": [
+      2004
+    ]
+  },
+  "statement": "Open EU-wide data cannot tell whether grassland, and with it habitat 62A0, is declining inside Natura 2000 site SI3000276 Kras. Slovenia's Article 17 reports for the Continental region assess 62A0 as unfavourable-bad and declining in 2013-2018 (U2, D) and in 2019-2024 (U2, D), with the reported area falling from 194 to 172 km2, a difference the 2019-2024 report attributes to a change of method; that is national, not site-level. Inside the site, CORINE change layers detect 7.4 ha lost from the grassland classes between 2000 and 2018, all of it pastures to mineral extraction in 2000-2006, while the national Land Use database, as analysed by Davidovic et al. (2026), shows grasslands falling by 2,814.9 ha (-26.9 %) and overgrown areas rising by 1,645.9 ha (+47.3 %) between 2002 and 2024. CORINE's 25 ha mapping unit (5 ha for change) cannot see encroachment at the scale abandonment of grazing works. HRL Grassland's 2015-2018 change classes are labelled unverified by the product, and CLC+ 2018 and 2021 are separate classifications. GBIF records (290 inside the site) are opportunistic and give no abundance trend.",
+  "review_status": "draft; not reviewed by an ecologist or by the Slovenian Distributed Centre (ZRC SAZU)"
+}

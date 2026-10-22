@@ -1,0 +1,13 @@
+period,from_code,from_label,to_code,to_label,area_ha
+2000-2006,231,Pastures,131,Mineral extraction sites,7.4
+2000-2006,311,Broad-leaved forest,112,Discontinuous urban fabric,0.1
+2000-2006,311,Broad-leaved forest,324,Transitional woodland-shrub,96.1
+2000-2006,312,Coniferous forest,324,Transitional woodland-shrub,5.9
+2006-2012,311,Broad-leaved forest,133,Construction sites,0.8
+2012-2018,133,Construction sites,121,Industrial or commercial units,0.1
+2012-2018,311,Broad-leaved forest,324,Transitional woodland-shrub,89.5
+2012-2018,312,Coniferous forest,324,Transitional woodland-shrub,149.1
+2012-2018,313,Mixed forest,324,Transitional woodland-shrub,37.4
+2012-2018,321,Natural grasslands,324,Transitional woodland-shrub,0.0
+2012-2018,324,Transitional woodland-shrub,223,Olive groves,6.1
+2012-2018,324,Transitional woodland-shrub,243,"Land principally occupied by agriculture, with significant areas of natural vegetation",30.8

@@ -1,0 +1,7 @@
+layer,pixel_m,value,class_name,pixels,share_pct,area_ha
+HRL_Grassland_2018,10,0,,3982264,82.89,39822.4
+HRL_Grassland_2018,10,1,Grassland,821999,17.11,8219.9
+HRL_GrasslandChange_15_18,20,0,all non-grassland areas,1905032,77.424,37196.4
+HRL_GrasslandChange_15_18,20,10,unchanged grassland in both years,149969,6.095,2928.2
+HRL_GrasslandChange_15_18,20,11,unverified grassland gain,314621,12.787,6143.1
+HRL_GrasslandChange_15_18,20,22,unverified grassland loss,90892,3.694,1774.7
